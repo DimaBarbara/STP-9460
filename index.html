@@ -5,38 +5,109 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tile Rush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-ClhKy2Jr.css">
+    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BQYd4pl0.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <div class="wrapper">
-      <nav class="nav">
-        <a class="" href="" aria-label="Site logo">
-          <svg class="" width="100" height="30">
-            <use href=""></use>
-          </svg>
-        </a>
-        <svg class="" width="100" height="30">
-            <use href=""></use>
-          </svg>
+      <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
+        <div class="nav-div">
+          <a href="#" aria-label="Site logo">
+            <svg width="32" height="32">
+              <use href="../img/svg/dolphin.svg"></use>
+            </svg>
+          </a>
+          <button
+            id="burger"
+            aria-label="Open menu"
+            class="burger"
+            type="button"
+          >
+            <svg width="28" height="28" aria-hidden="true" focusable="false">
+              <use href="../img/svg/burger.svg"></use>
+            </svg>
+          </button>
         </div>
-      </div>
+        <ul class="menu__list" id="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#section1">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section2">About the Game</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section3">How to play</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section4">Game Features</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section1">Screenshots</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section2">Levels</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section3">Boosters</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section4">Zen Mode</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section1">What Makes it Special</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section2">Testimonials</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section3">FAQ</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section4">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </header>
 
+
     <main>
-      <hero>
-  <h1>Welcome to TileRush! Match. Relax. Repeat.</h1>
-  <img src="" alt="" />
-  <p>
-    Enjoy a peaceful match 3 puzzle adventure with hundreds of satisfying
-    levels.
-  </p>
-  <button>Download Now</button>
-</hero>
+      <section class="hero">
+  <div class="container">
+    <div class="wrapper">
+      <h1 class="hero__title">
+        Welcome to TileRush!
+        <span class="hero__highlight--match">Match.</span>
+        <span class="hero__highlight--relax">Relax.</span>
+        <span class="hero__highlight--repeat">Repeat.</span>
+      </h1>
+      <img
+        class="hero__image"
+        src="../img/webp/hero.png"
+        alt="TileRush game screenshot"
+      />
+      <p class="hero__description">
+        Enjoy a peaceful match 3 puzzle adventure with hundreds of satisfying
+        levels.
+      </p>
+      <button class="hero__btn">
+        <svg width="28" height="29">
+          <use href="../img/svg/google-play.svg"></use>
+        </svg>
+        Download Now
+      </button>
+    </div>
+  </div>
+</section>
 
       <section>
   <h2>About the Game</h2>
