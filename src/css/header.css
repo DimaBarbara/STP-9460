@@ -1,0 +1,83 @@
+.header .wrapper {
+  width: 288px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+.nav {
+  background-image: url('../img/webp/header.png');
+  width: 288px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform-origin: top center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.nav.nav--active {
+  background-image: url('../img/webp/header-menu.png');
+  width: 288px;
+  height: 550px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+.nav-div {
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+.burger {
+  background: inherit;
+  border: none;
+}
+
+.menu__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  z-index: 999;
+}
+
+.menu__list.menu__list--active {
+  position: static;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #100804;
+}
+
+.menu__link {
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: #ffd700; /* або що хочеш */
+  }
+}

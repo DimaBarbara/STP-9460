@@ -1,0 +1,55 @@
+.hero .wrapper {
+  margin-top: 24px;
+}
+.hero__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.hero__highlight--match {
+  color: var(--color-blue);
+}
+
+.hero__highlight--relax {
+  color: var(--color-pink);
+}
+
+.hero__highlight--repeat {
+  color: var(--color-green);
+}
+.hero__image {
+  border-radius: 50px;
+  width: 288px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 16px;
+}
+.hero__description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  color: var(--color-black);
+  margin-top: 16px;
+}
+.hero__btn {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 35px;
+  padding: 16px 24px;
+  width: 288px;
+  height: 63px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  background: var(--color-blue);
+  border: none;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
