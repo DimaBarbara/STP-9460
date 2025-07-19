@@ -1,0 +1,36 @@
+.how-to-play__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+}
+.how-to-play__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-black);
+  margin-top: 8px;
+}
+.how-to-play__step {
+  margin-top: 16px;
+  border-radius: 35px;
+  padding: 24px;
+  width: 288px;
+  height: 154px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  background: var(--color-white);
+}
+.how-to-play__step-number {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--color-black);
+}
+.how-to-play__step-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+}

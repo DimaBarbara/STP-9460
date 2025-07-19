@@ -1,0 +1,79 @@
+.about-game .wrapper {
+  padding-top: 32px;
+  width: 288px;
+}
+.about-game__cont {
+  padding: 24px 16px;
+  border-radius: 35px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  background: var(--color-yellow);
+}
+.about-game__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+}
+.about-game__description {
+  margin-top: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+}
+.about-game__description.first {
+  width: 154px;
+  margin-top: 16px;
+}
+.about-game__description.second {
+  width: 113px;
+}
+
+.about-game__photo-cont {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.about-game__photo-cont > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.about-game__img {
+  width: 203px;
+  height: 268px;
+  position: relative;
+  right: 40px;
+}
+.about-game__extra {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-game__photo-cont2 {
+  display: flex;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+.about-game__img2 {
+  width: 213px;
+  height: 263px;
+  position: relative;
+  right: 40px;
+}
+.about-game__photo-cont2 > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+.about-game__description.third {
+  width: 131px;
+}

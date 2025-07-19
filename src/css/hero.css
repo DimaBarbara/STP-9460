@@ -1,5 +1,6 @@
 .hero .wrapper {
   margin-top: 24px;
+  width: 288px;
 }
 .hero__title {
   font-family: 'Jua', sans-serif;
