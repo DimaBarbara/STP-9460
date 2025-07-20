@@ -4,28 +4,35 @@
   padding-top: 32px;
 }
 .nav {
-  background-image: url('../img/webp/header.png');
-  width: 288px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 288px;
+  margin: 0 auto;
+  z-index: 1000;
+  background-image: url('../img/header/header.png');
   height: 62px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: contain;
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transform-origin: top center;
+
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+.dolphin_svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
 .nav.nav--active {
-  background-image: url('../img/webp/header-menu.png');
-  width: 288px;
   height: 550px;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  transform-origin: top center;
-  display: flex;
+  background-image: url('../img/header/header-menu.png');
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -36,6 +43,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 24px;
+  padding-bottom: 10px;
 }
 .burger {
   background: inherit;
@@ -68,16 +76,66 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: #100804;
+  color: var(--color-black);
 }
 
 .menu__link {
-  color: black;
+  color: var(--color-black);
   text-decoration: none;
   transition: color 0.2s ease;
 
   &:hover,
   &:focus {
-    color: #ffd700; /* або що хочеш */
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header .wrapper {
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+  .nav {
+    background-image: url('../img/header/header-desk.png');
+    width: 1040px;
+    height: 181px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform-origin: top center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 33px;
+    max-width: 1040px;
+  }
+  .nav-div {
+    display: flex;
+    width: auto;
+    padding: 0;
+  }
+  .dolphin_svg {
+    width: 58px;
+    height: 60px;
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 61px;
+    width: 885px;
+    pointer-events: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    position: static;
+    align-items: center;
+    font-size: 17px;
   }
 }

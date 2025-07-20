@@ -1,5 +1,5 @@
 .hero .wrapper {
-  margin-top: 24px;
+  margin-top: 86px;
   width: 288px;
 }
 .hero__title {
@@ -53,4 +53,44 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
+}
+@media only screen and (min-width: 1200px) {
+  .hero .wrapper {
+    margin-top: 185px;
+    width: 1040px;
+  }
+  .hero__title {
+    font-size: 54px;
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  .hero__image {
+    border-radius: 100px;
+    width: 419px;
+    height: 419px;
+    object-fit: cover;
+    margin-top: 16px;
+  }
+  .hero__description {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .hero__btn {
+    font-family: 'Jua', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 35px;
+    padding: 16px 24px;
+    width: 288px;
+    height: 63px;
+    border: none;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

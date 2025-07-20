@@ -1,7 +1,7 @@
-.container {
+/* ..container {
   width: 288px;
   margin: 0 auto;
-}
+} */
 
 .link_to_home {
   display: flex;
@@ -15,21 +15,21 @@
   height: 60px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
   background-color: var(--color-blue);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--color-black);
   margin-top: 40px;
   margin-bottom: 24px;
 }
 
 .privacy-policy_title {
-  font-family: "Jua", sans-serif;
+  font-family: 'Jua', sans-serif;
   font-size: 30px;
   color: var(--color-black);
   margin-bottom: 24px;
 }
 
 .privacy-policy_last_upd {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-black);
@@ -38,7 +38,7 @@
 .privacy-policy_custom-list {
   list-style-type: disc;
   padding-left: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-black);
@@ -51,14 +51,14 @@
 }
 
 .privacy-policy_text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-black);
 }
 
 .privacy-policy_subtitle {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: var(--color-black);
@@ -71,5 +71,4 @@
 }
 
 @media screen and (min-width: 1200px) {
-  
 }
