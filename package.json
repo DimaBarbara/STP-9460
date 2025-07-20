@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/evpl_vite_template/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
