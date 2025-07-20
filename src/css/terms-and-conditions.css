@@ -1,4 +1,4 @@
-.privacy-policy_wrapper {
+.wrapper {
   width: 288px;
   margin: 0 auto;
 }
@@ -25,26 +25,26 @@
   background-color: var(--color-blue-hover);
 }
 
-.privacy-policy_title {
+.terms_title {
   font-family: 'Jua', sans-serif;
   font-size: 30px;
   color: var(--color-black);
   margin-bottom: 24px;
 }
 
-.privacy-policy_last_upd {
+.terms_last_upd {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: var(--color-black);
 }
 
-.privacy-policy_last_upd_date {
+.terms_last_upd_date {
   font-weight: 400;
   font-size: 14px;
 }
 
-.privacy-policy_custom-list {
+.terms_custom-list {
   list-style-type: disc;
   padding-left: 1.5rem;
   font-family: 'Poppins', sans-serif;
@@ -53,34 +53,39 @@
   color: var(--color-black);
 }
 
-.privacy-policy_custom-list li a {
+.terms_custom-list li a {
   font-weight: 400;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 
-.privacy-policy_text {
+.terms_text {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-black);
 }
 
-.privacy-policy_subtitle {
+.terms_text a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.terms_subtitle {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: var(--color-black);
 }
 
-.privacy-policy_email {
+.terms_email {
   font-weight: 400;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .privacy-policy_wrapper {
+  .wrapper {
     width: 1040px;
   }
 
@@ -94,32 +99,32 @@
     margin-bottom: 64px;
   }
 
-  .privacy-policy_title {
+  .terms_title {
     font-size: 54px;
     margin-bottom: 40px;
   }
 
-  .privacy-policy_last_upd {
+  .terms_last_upd {
     font-size: 20px;
   }
 
-  .privacy-policy_last_upd_date {
+  .terms_last_upd_date {
     font-size: 20px;
   }
 
-  .privacy-policy_custom-list {
+  .terms_custom-list {
     font-size: 20px
   }
 
-  .privacy-policy_custom-list li a {
+  .terms_custom-list li a {
     font-size: 20px;
   }
 
-  .privacy-policy_text {
+  .terms_text {
     font-size: 20px;
   }
 
-  .privacy-policy_subtitle {
+  .terms_subtitle {
     font-size: 20px;
   }
 }
