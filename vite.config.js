@@ -7,6 +7,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/evpl_vite_template/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
