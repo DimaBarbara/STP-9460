@@ -21,6 +21,13 @@
   padding: 32px 24px 0px 24px;
 }
 
+.footer_contact_desc {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .footer_heading {
   font-family: "Jua", sans-serif;
   font-size: 20px;
@@ -33,10 +40,18 @@
   color: var(--color-black);
 }
 
+.footer_follow_desc {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer_heading_follow{
   font-family: "Jua", sans-serif;
   font-size: 20px;
   color: var(--color-black);
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 
 .footer_follow_icons {
@@ -44,9 +59,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: row;
+  width: 240px;
   gap: 40px;
   margin-bottom: 32px;
-  width: 100%;
 }
 
 .footer_icon_link {
@@ -57,9 +73,17 @@
   align-items: center;
 }
 
+.footer_icon_link:hover {
+  fill: var(--color-white);
+}
+
 .footer_icon {
   width: 37px;
   height: 37px;
+}
+
+.footer_info_desc {
+  padding-bottom: 19px;
 }
 
 .footer_nav {
@@ -74,6 +98,10 @@
   margin-bottom: 16px;
 }
 
+.footer_nav:hover {
+  color: var(--color-black);
+}
+
 .footer_info {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -82,7 +110,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-bottom: 19px;
 }
 
 .footer_info_text {
@@ -100,15 +127,67 @@ padding-left: 16px;
     background-image: url('../img/footer/footer-desc-2x.webp');
     width: 1040px;
   }
-/* 
+
   .footer_contact {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 89px 0;
+  }
+
+  .footer_contact_desc {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer_heading {
+    font-size: 24px;
+  }
+
+  .footer_text {
+    font-size: 16px;
+  }
+
+  .footer_heading_follow {
+    font-size: 24px;
+    justify-content: flex-end;
   }
 
   .footer_follow_icons {
+    justify-content: flex-end;
+    gap: 16px;
+  }
 
-  } */
+  .footer_info_desc {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 89px;
+  }
 
+  .footer_nav br {
+    display: none;
+  }
+
+  .footer_nav {
+    font-size: 16px;
+    margin-bottom: 0;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .footer_info {
+    font-size: 16px;
+  }
+
+  .footer_info_text {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
 }
