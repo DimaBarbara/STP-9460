@@ -1,0 +1,113 @@
+.policy__home-link {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 35px;
+  padding: 16px 24px;
+  width: 288px;
+  height: 60px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-blue);
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-black);
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.policy__updated {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  margin-top: 24px;
+}
+.policy__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--color-black);
+}
+.policy__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+}
+.policy__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-black);
+}
+.policy__list {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+}
+.policy__item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.policy__item_underline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  list-style-type: disc;
+  list-style-position: inside;
+  text-decoration: underline;
+}
+.policy__cookie-type {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.policy__link {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .main .wrapper {
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+  .policy__home-link {
+    width: 203px;
+    height: 62px;
+    margin-bottom: 64px;
+  }
+  .policy__updated {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .policy__title {
+    font-size: 54px;
+  }
+  .policy__text {
+    font-size: 20px;
+  }
+  .policy__subtitle {
+    font-size: 20px;
+  }
+  .policy__list {
+    font-size: 20px;
+  }
+  .policy__item {
+    font-size: 20px;
+  }
+  .policy__item_underline {
+    font-size: 20px;
+  }
+  .policy__cookie-type {
+    font-size: 20px;
+  }
+}

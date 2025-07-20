@@ -60,20 +60,29 @@
 .about-game__photo-cont2 {
   display: flex;
   align-items: flex-start;
+  position: relative;
+  width: 288px;
   overflow: visible;
 }
 
+.about-game__img-wrapper {
+  position: relative;
+  margin-right: -90px;
+  z-index: 0;
+  flex-shrink: 0;
+}
+
 .about-game__img2 {
+  position: relative;
   width: 213px;
   height: 263px;
-  position: relative;
-  right: 40px;
+  display: block;
+  right: 70px;
 }
-.about-game__photo-cont2 > div {
-  display: flex;
-  flex-direction: column;
-  max-width: 60%;
-}
-.about-game__description.third {
+
+.about-game__description_cont {
   width: 131px;
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
 }

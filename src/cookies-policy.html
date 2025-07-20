@@ -6,142 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cookies Policy</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
+    <main class="main">
       <div class="container">
-        <a href="../index.html">Go to Home</a>
-        <h1>Cookies Policy</h1>
-        <p>
-          <strong>Last Updated:</strong>
-          <time datetime="2025-05-30">2025-05-30</time>
-        </p>
-
-        <p>
-          This Cookies Policy explains what cookies are and how we use them. You
-          should read this policy to understand what types of cookies we use,
-          what data they collect, and how you can manage your preferences.
-        </p>
-
-        <p>
-          Cookies do not typically contain personally identifiable information.
-          However, in some cases, personal data that we store about you may be
-          linked to information obtained from cookies. For more details, see our
-          <a href="/privacy-policy">Privacy Policy</a>.
-        </p>
-
-        <h2>1. What Are Cookies?</h2>
-        <p>
-          Cookies are small text files stored on your device when you visit a
-          website. They help websites function properly, remember preferences,
-          and collect analytical data.
-        </p>
-
-        <h2>2. How We Use Cookies</h2>
-        <p>We use cookies to:</p>
-        <ul>
-          <li>Ensure the website functions correctly.</li>
-          <li>Analyze user behavior and improve website performance.</li>
-          <li>Personalize your experience and remember preferences.</li>
-        </ul>
-
-        <h2>3. Types of Cookies We Use</h2>
-        <p>
-          Cookies can be <strong>session</strong> or
-          <strong>persistent</strong>. Session cookies expire when you close
-          your browser, while persistent cookies remain stored until manually
-          deleted or they reach expiration.
-        </p>
-
-        <h3>Necessary Cookies</h3>
-        <ul>
-          <li><strong>Type:</strong> Session Cookies</li>
-          <li>
-            <strong>Purpose:</strong> Required for core website functions and
-            security.
-          </li>
-        </ul>
-
-        <h3>Functional Cookies</h3>
-        <ul>
-          <li><strong>Type:</strong> Persistent Cookies</li>
-          <li>
-            <strong>Purpose:</strong> Remember user preferences (e.g., language,
-            login details).
-          </li>
-        </ul>
-
-        <h3>Analytics Cookies</h3>
-        <ul>
-          <li><strong>Type:</strong> Persistent Cookies</li>
-          <li>
-            <strong>Purpose:</strong> Track user behavior and website
-            performance using Google Analytics.
-          </li>
-        </ul>
-
-        <h3>Advertising Cookies</h3>
-        <ul>
-          <li><strong>Type:</strong> Persistent Cookies</li>
-          <li>
-            <strong>Purpose:</strong> Show relevant ads based on your browsing
-            behavior.
-          </li>
-        </ul>
-
-        <h2>4. Managing Cookies</h2>
-        <p>
-          You can manage your cookie preferences through your browser settings.
-          If you disable cookies, some features of the website may not function
-          properly.
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://support.google.com/chrome/answer/95647"
-              target="_blank"
-              >Manage cookies in Chrome</a
+        <div class="wrapper">
+          <a href="../index.html" class="policy__home-link">
+            <svg
+              class="policy__home-icon"
+              width="13"
+              height="22"
+              aria-hidden="true"
+              focusable="false"
             >
-          </li>
-          <li>
-            <a
-              href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
-              target="_blank"
-              >Manage cookies in Firefox</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies"
-              target="_blank"
-              >Manage cookies in Internet Explorer</a
-            >
-          </li>
-          <li>
-            <a href="https://support.apple.com/en-us/HT201265" target="_blank"
-              >Manage cookies in Safari</a
-            >
-          </li>
-        </ul>
+              <use href="./img/svg/sprite.svg#icon-arrow_left"></use>
+            </svg>
+            Go to Home
+          </a>
+          <h1 class="policy__title">Cookies Policy</h1>
 
-        <h2>5. Third-Party Cookies</h2>
-        <p>
-          Some third-party services (e.g., Google Analytics, advertising
-          networks) may use cookies to collect information. These cookies are
-          subject to their own privacy policies.
-        </p>
+          <p class="policy__updated">
+            <strong>Last Updated:</strong>
+            <time datetime="2025-05-30">2025-05-30</time>
+          </p>
 
-        <h2>6. Changes to This Policy</h2>
-        <p>
-          We may update this Cookies Policy periodically. Significant changes
-          will be communicated via the website.
-        </p>
-
-        <h2>7. Contact Us</h2>
-        <p>
-          If you have any questions about this Cookies Policy, you can contact
-          us at: <a href="mailto:info@mindrush.pro">info@mindrush.pro</a>
-        </p>
+          <p class="policy__text">
+            This Cookies Policy explains what cookies are and how we use them.
+            You should read this policy to understand what types of cookies we
+            use, what data they collect, and how you can manage your
+            preferences.
+          </p>
+          <br />
+          <p class="policy__text">
+            Cookies do not typically contain personally identifiable
+            information. However, in some cases, personal data that we store
+            about you may be linked to information obtained from cookies. For
+            more details, see our
+            <a href="/privacy-policy" class="policy__link">Privacy Policy</a>.
+          </p>
+          <br />
+          <h2 class="policy__subtitle">1. What Are Cookies?</h2>
+          <p class="policy__text">
+            Cookies are small text files stored on your device when you visit a
+            website. They help websites function properly, remember preferences,
+            and collect analytical data.
+          </p>
+          <br />
+          <h2 class="policy__subtitle">2. How We Use Cookies</h2>
+          <p class="policy__text">We use cookies to:</p>
+          <ul class="policy__list">
+            <li class="policy__item">
+              Ensure the website functions correctly.
+            </li>
+            <li class="policy__item">
+              Analyze user behavior and improve website performance.
+            </li>
+            <li class="policy__item">
+              Personalize your experience and remember preferences.
+            </li>
+          </ul>
+          <br />
+          <h2 class="policy__subtitle">3. Types of Cookies We Use</h2>
+          <p class="policy__text">
+            Cookies can be "session" or "persistent". Session cookies expire
+            when you close your browser, while persistent cookies remain stored
+            until manually deleted or they reach expiration.
+          </p>
+          <ul class="policy__cookies-list">
+            <li class="policy__cookie-type">
+              Necessary Cookies
+              <ul class="policy__cookie-details">
+                <li class="policy__cookie-detail-item">
+                  Type: Session Cookies
+                </li>
+                <li class="policy__cookie-detail-item">
+                  Purpose: Required for core website functions and security.
+                </li>
+              </ul>
+            </li>
+            <li class="policy__cookie-type">
+              Functional Cookies
+              <ul class="policy__cookie-details">
+                <li class="policy__cookie-detail-item">
+                  Type: Persistent Cookies
+                </li>
+                <li class="policy__cookie-detail-item">
+                  Purpose: Remember user preferences (e.g., language, login
+                  details).
+                </li>
+              </ul>
+            </li>
+            <li class="policy__cookie-type">
+              Analytics Cookies
+              <ul class="policy__cookie-details">
+                <li class="policy__cookie-detail-item">
+                  Type: Persistent Cookies
+                </li>
+                <li class="policy__cookie-detail-item">
+                  Purpose: Track user behavior and website performance using
+                  Google Analytics.
+                </li>
+              </ul>
+            </li>
+            <li class="policy__cookie-type">
+              Advertising Cookies
+              <ul class="policy__cookie-details">
+                <li class="policy__cookie-detail-item">
+                  Type: Persistent Cookies
+                </li>
+                <li class="policy__cookie-detail-item">
+                  Purpose: Show relevant ads based on your browsing behavior.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <br />
+          <h2 class="policy__subtitle">4. Managing Cookies</h2>
+          <p class="policy__text">
+            You can manage your cookie preferences through your browser
+            settings. If you disable cookies, some features of the website may
+            not function properly.
+          </p>
+          <ul class="policy__list policy__list--external">
+            <li class="policy__item_underline">
+              <a
+                href="https://support.google.com/chrome/answer/95647"
+                target="_blank"
+                class="policy__link"
+                >Manage cookies in Chrome</a
+              >
+            </li>
+            <li class="policy__item_underline">
+              <a
+                href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+                target="_blank"
+                class="policy__link"
+                >Manage cookies in Firefox</a
+              >
+            </li>
+            <li class="policy__item_underline">
+              <a
+                href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies"
+                target="_blank"
+                class="policy__link"
+                >Manage cookies in Internet Explorer</a
+              >
+            </li>
+            <li class="policy__item_underline">
+              <a
+                href="https://support.apple.com/en-us/HT201265"
+                target="_blank"
+                class="policy__link"
+                >Manage cookies in Safari</a
+              >
+            </li>
+          </ul>
+          <br />
+          <h2 class="policy__subtitle">5. Third-Party Cookies</h2>
+          <p class="policy__text">
+            Some third-party services (e.g., Google Analytics, advertising
+            networks) may use cookies to collect information. These cookies are
+            subject to their own privacy policies.
+          </p>
+          <br />
+          <h2 class="policy__subtitle">6. Changes to This Policy</h2>
+          <p class="policy__text">
+            We may update this Cookies Policy periodically. Significant changes
+            will be communicated via the website.
+          </p>
+          <br />
+          <h2 class="policy__subtitle">7. Contact Us</h2>
+          <p class="policy__text">
+            If you have any questions about this Cookies Policy, you can contact
+            us at:
+            <a href="mailto:info@mindrush.pro" class="policy__link"
+              >info@mindrush.pro</a
+            >
+          </p>
+        </div>
       </div>
     </main>
 

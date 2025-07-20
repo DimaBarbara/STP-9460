@@ -7,7 +7,6 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/STP-9460/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
