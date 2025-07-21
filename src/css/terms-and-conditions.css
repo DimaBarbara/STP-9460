@@ -3,11 +3,10 @@
   margin: 0 auto;
 }
 
-.link_to_home {
-  display: flex;
+.link_to_home_tc {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 8px;
   border-radius: 35px;
   padding: 16px 24px;
@@ -16,13 +15,23 @@
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
   background-color: var(--color-blue);
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: var(--color-black);
   margin-top: 40px;
   margin-bottom: 24px;
 }
 
-.link_to_home:hover {
+.link_to_home_tc:hover {
   background-color: var(--color-blue-hover);
+}
+
+.icon_arrow_left_tc {
+  display: inline-block;
+  flex-shrink: 0;
+  fill: var(--color-black);
+  width: 28px;
+  height: 28px;
 }
 
 .terms_title {
@@ -89,10 +98,8 @@
     width: 1040px;
   }
 
-  .link_to_home {
+  .link_to_home_tc {
     font-size: 20px;
-    border-radius: 35px;
-    padding: 16px 24px;
     width: 203px;
     height: 62px;
     margin-top: 64px;
