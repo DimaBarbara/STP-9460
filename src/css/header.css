@@ -21,10 +21,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, margin-top 0.3s ease;
 }
-
+.nav--scrolled {
+  margin-top: 0;
+}
 .dolphin_svg {
   width: 32px;
   height: 32px;

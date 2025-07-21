@@ -1,0 +1,44 @@
+.game_features {
+  scroll-margin-top: 80px;
+}
+.game_features__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+.game_features__div_descr {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.game_features__description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  width: 183px;
+  margin-left: 28px;
+}
+.game_features__description--double {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  width: 183px;
+  margin-left: 77px;
+}
+.game_features__icon {
+  position: absolute;
+  top: -48px;
+  left: -60px;
+  z-index: 0;
+}
+.game_features__img {
+  width: 216px;
+  height: 274px;
+  margin-left: auto;
+  margin-top: 10px;
+}

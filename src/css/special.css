@@ -1,0 +1,38 @@
+.special {
+  scroll-margin-top: 40px;
+}
+.special .wrapper {
+  padding-top: 32px;
+}
+.special__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+.special__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+.special__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+.special__item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.special__icon {
+  width: 64px;
+  height: 64px;
+}

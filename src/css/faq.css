@@ -1,0 +1,69 @@
+.faq {
+  scroll-margin-top: 80px;
+}
+.ac {
+  display: flex;
+  flex-direction: column;
+  border-radius: 35px;
+  overflow: hidden;
+  width: 288px;
+  padding: 25px 24px;
+  background-color: var(--color-white);
+}
+.ac-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ac-header {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  background-color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-black);
+}
+
+.ac-trigger {
+  width: 32px !important;
+  height: 32px;
+}
+
+.ac-trigger__text {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-black);
+  text-align: left;
+}
+
+.ac-arrow {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.ac.is-active .ac-arrow {
+  transform: rotate(180deg);
+}
+
+.ac-panel {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: rgba(106, 200, 250, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ac-text {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: var(--color-black);
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+.boosters {
+  scroll-margin-top: 80px;
+}
+.boosters-title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+.boosters-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+.booster__div {
+  position: relative;
+  border-radius: 35px;
+  padding: 24px;
+  width: 288px;
+  height: 154px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  background: var(--color-white);
+  margin-bottom: 16px;
+}
+.booster__title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+.booster__description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  width: 141px;
+}
+.booster__image--bones {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  top: 30px;
+  right: -10px;
+}
+.booster__image--arrows {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  top: 30px;
+  right: -20px;
+}
+.booster__image--cup {
+  position: absolute;
+  width: 102px;
+  height: 130px;
+  top: 30px;
+  right: -5px;
+}

@@ -40,3 +40,9 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+a:active {
+  background: none;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,3 +1,11 @@
+.how-to-play {
+  scroll-margin-top: 40px;
+}
+.how-to-play .wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .how-to-play__title {
   font-family: 'Jua', sans-serif;
   font-weight: 400;
@@ -14,6 +22,7 @@
   margin-top: 8px;
 }
 .how-to-play__step {
+  position: relative;
   margin-top: 16px;
   border-radius: 35px;
   padding: 24px;
@@ -33,4 +42,46 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--color-black);
+  width: 141px;
+  margin-top: 10px;
+}
+.how-to-play__div {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+.how-to-play__step-image--square {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 30px;
+  right: -8px;
+}
+.how-to-play__step-image--puzzle {
+  width: 159px;
+  height: 150px;
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
+.how-to-play__step-image--reward {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  top: 25px;
+  right: -10px;
+}
+.how-to-play__step-image--lamp {
+  width: 151px;
+  height: 151px;
+  position: absolute;
+  top: 25px;
+  right: -17px;
+}
+.how-to-play__step-image--time {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  top: 10px;
+  right: -17px;
 }

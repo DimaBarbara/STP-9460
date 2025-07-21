@@ -1,7 +1,11 @@
+.about-game {
+  scroll-margin-top: 40px;
+}
 .about-game .wrapper {
   padding-top: 32px;
   width: 288px;
 }
+
 .about-game__cont {
   padding: 24px 16px;
   border-radius: 35px;

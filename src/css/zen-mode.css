@@ -1,0 +1,105 @@
+.zen-mode {
+  scroll-margin-top: 60px;
+}
+.zen-mode .wrapper {
+  padding-top: 16px;
+  box-sizing: border-box;
+  overflow: visible;
+  position: relative;
+}
+.zen-title {
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+.zen-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+.zen-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 0 0 50px;
+  width: 304px;
+  height: 174px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+  margin-right: -16px;
+}
+
+.zen-block--double {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 50px 50px 0;
+  width: 304px;
+  height: 174px;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 16px;
+  margin-left: -16px;
+}
+.zen-block,
+.zen-block--double {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.zen-block {
+  transform: translateX(60px);
+}
+
+.zen-block--double {
+  transform: translateX(-60px);
+}
+
+.zen-block.animate,
+.zen-block--double.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+.zen-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  border-radius: 35px;
+  padding: 0 24px;
+  width: 272px;
+  height: 142px;
+  background-color: var(--color-white);
+}
+.zen-block.first {
+  background-color: var(--color-green);
+}
+.zen-block--double.second {
+  background-image: url(../img/zen-mode/block_2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.zen-block.third {
+  background-color: var(--color-yellow);
+}
+.zen-block--double.fourth {
+  background-image: url(../img/zen-mode/block_4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.zen-block.fifth {
+  background-color: var(--color-pink);
+}
+.zen-block--double.sixth {
+  background-image: url(../img/zen-mode/block_6.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
