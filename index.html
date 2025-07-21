@@ -32,10 +32,12 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BWRd5BO5.css">
+    <link rel="modulepreload" crossorigin href="/evpl_vite_template/assets/vendor-Bf9UOCpT.js">
+    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/vendor-pvxkJjp9.css">
+    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BIjleFtm.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
   <div class="container">
     <div class="wrapper">
       <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
@@ -64,40 +66,40 @@
         </div>
         <ul class="menu__list" id="menu">
           <li class="menu__item">
-            <a class="menu__link" href="#section1">Home</a>
+            <a class="menu__link" href="#header">Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section2">About the Game</a>
+            <a class="menu__link" href="#about-game">About the Game</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section3">How to play</a>
+            <a class="menu__link" href="#how-to-play">How to play</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section4">Game Features</a>
+            <a class="menu__link" href="#game_features">Game Features</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section1">Screenshots</a>
+            <a class="menu__link" href="#screenshots">Screenshots</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section2">Levels</a>
+            <a class="menu__link" href="#levels">Levels</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section3">Boosters</a>
+            <a class="menu__link" href="#boosters">Boosters</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section4">Zen Mode</a>
+            <a class="menu__link" href="#zen-mode">Zen Mode</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section1">What Makes it Special</a>
+            <a class="menu__link" href="#special">What Makes it Special</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section2">Testimonials</a>
+            <a class="menu__link" href="#testimonials">Testimonials</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section3">FAQ</a>
+            <a class="menu__link" href="#faq">FAQ</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#section4">Contact</a>
+            <a class="menu__link" href="#footer">Contact</a>
           </li>
         </ul>
       </nav>
@@ -107,7 +109,7 @@
 
 
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
   <div class="container">
     <div class="wrapper">
       <h1 class="hero__title">
@@ -135,7 +137,7 @@
   </div>
 </section>
 
-      <section class="about-game">
+      <section class="about-game" id="about-game">
   <div class="container">
     <div class="wrapper">
       <div class="about-game__cont">
@@ -203,7 +205,7 @@
   </div>
 </section>
 
-      <section class="how-to-play">
+      <section class="how-to-play" id="how-to-play">
   <div class="container">
     <div class="wrapper">
       <h2 class="how-to-play__title">How to play</h2>
@@ -213,9 +215,12 @@
 
       <div class="how-to-play__step">
         <h3 class="how-to-play__step-number">/01</h3>
-        <p class="how-to-play__step-description">Tap tiles to pick them up.</p>
+        <p class="how-to-play__step-description">
+          Tap tiles to <br />pick them up.
+        </p>
+
         <img
-          class="how-to-play__step-image"
+          class="how-to-play__step-image--square"
           alt="Step 1 illustration"
           src="../img/how-to-play/square.png"
         />
@@ -223,11 +228,12 @@
 
       <div class="how-to-play__step">
         <h3 class="how-to-play__step-number">/02</h3>
+
         <p class="how-to-play__step-description">
           Match 3 of the same kind to clear them.
         </p>
         <img
-          class="how-to-play__step-image"
+          class="how-to-play__step-image--puzzle"
           alt="Step 2 illustration"
           src="../img/how-to-play/puzzle.png"
         />
@@ -235,11 +241,12 @@
 
       <div class="how-to-play__step">
         <h3 class="how-to-play__step-number">/03</h3>
+
         <p class="how-to-play__step-description">
           Clear the board to complete the level.
         </p>
         <img
-          class="how-to-play__step-image"
+          class="how-to-play__step-image--reward"
           alt="Step 3 illustration"
           src="../img/how-to-play/reward.png"
         />
@@ -247,11 +254,12 @@
 
       <div class="how-to-play__step">
         <h3 class="how-to-play__step-number">/04</h3>
+
         <p class="how-to-play__step-description">
           Use logic and pattern recognition to plan your moves.
         </p>
         <img
-          class="how-to-play__step-image"
+          class="how-to-play__step-image--lamp"
           alt="Step 4 illustration"
           src="../img/how-to-play/lamp.png"
         />
@@ -259,11 +267,12 @@
 
       <div class="how-to-play__step">
         <h3 class="how-to-play__step-number">/05</h3>
+
         <p class="how-to-play__step-description">
           No time limits — take all the time you need.
         </p>
         <img
-          class="how-to-play__step-image"
+          class="how-to-play__step-image--time"
           alt="Step 5 illustration"
           src="../img/how-to-play/time.png"
         />
@@ -272,19 +281,43 @@
   </div>
 </section>
 
-      <section>
+      <section class="game_features" id="game_features">
   <div class="container">
     <div class="wrapper">
-      <h2>Game Features</h2>
-      <p>Tap tiles to pick them up</p>
-      <p>No timers, no rush — play at your own pace</p>
+      <h2 class="game_features__title">Game Features</h2>
+      <div class="game_features__div_descr">
+        <p class="game_features__description">
+          <!-- <svg width="120" height="120" class="game_features__icon">
+            <use href="../img/svg/green.svg"></use>
+          </svg> -->
+          Tap tiles to pick them up
+        </p>
+        <p class="game_features__description--double">
+          No timers, no rush — play at your own pace
+        </p>
 
-      <p>Minimalist visuals with vibrant color palettes</p>
-      <p>Smart hint system that assists, not intrudes</p>
-      <p>Light background music to support focus and calm</p>
-      <p>Available offline for uninterrupted gameplay</p>
-      <p>Supports both phones and tablets</p>
-      <img alt="" src="" />
+        <p class="game_features__description">
+          Minimalist visuals with vibrant color palettes
+        </p>
+        <p class="game_features__description--double">
+          Smart hint system that assists, not intrudes
+        </p>
+        <p class="game_features__description">
+          Light background music to support focus and calm
+        </p>
+        <p class="game_features__description--double">
+          Available offline for uninterrupted gameplay
+        </p>
+        <p class="game_features__description">
+          Supports both phones and tablets
+        </p>
+      </div>
+
+      <img
+        class="game_features__img"
+        alt="hi"
+        src="../img/game-features/hi.png"
+      />
     </div>
   </div>
 </section>
@@ -295,164 +328,432 @@
   </div>
 </section>
 
-      <section>
+      <section class="levels" id="levels">
   <div class="container">
     <div class="wrapper">
-      <h2>Levels</h2>
-      <p>From easy beginnings to satisfying challenges.</p>
-      <p>
+      <h2 class="levels-title">Levels</h2>
+      <p class="levels-intro">From easy beginnings to satisfying challenges.</p>
+      <p class="levels-description">
         Tile Rush features a thoughtfully designed level system that gradually
         increases in complexity while keeping gameplay enjoyable.
       </p>
-      <img src="../img/levels/cube.png" alt="cube" />
-      <p>
+      <img class="levels-image--cube" src="../img/levels/cube.png" alt="cube" />
+      <p class="levels-description">
         Early levels introduce you to core mechanics, helping you understand the
         matching system and how different tiles interact. As you progress, new
         patterns, obstacles, and strategic opportunities emerge.
       </p>
-      <img src="../img/levels/candy.png" alt="candy" />
-      <p>
+      <img
+        class="levels-image--candy"
+        src="../img/levels/candy.png"
+        alt="candy"
+      />
+      <p class="levels-description">
         With over 500+ handcrafted levels (and more added regularly), you’ll
         encounter evolving challenges like layered tiles, limited moves, and
         bonus objectives.
       </p>
-      <img src="../img/levels/tv.png" alt="tv" />
-      <p>
+      <img class="levels-image--tv" src="../img/levels/tv.png" alt="tv" />
+      <p class="levels-description">
         Each new set of levels is set in a different visual theme, offering not
         just variety in gameplay but also aesthetic freshness.
       </p>
-      <img src="../img/levels/present.png" alt="present" />
-      <p>
+      <img
+        class="levels-image--present"
+        src="../img/levels/present.png"
+        alt="present"
+      />
+      <p class="levels-description">
         Whether you're here for a light distraction or a serious brain workout,
         the level progression keeps you moving forward with satisfaction.
       </p>
-      <img src="../img/levels/firecracker.png" alt="firecracker" />
+      <img
+        class="levels-image--firecracker"
+        src="../img/levels/firecracker.png"
+        alt="firecracker"
+      />
     </div>
   </div>
 </section>
 
-      <section>
+      <section id="boosters" class="boosters">
   <div class="container">
     <div class="wrapper">
-      <h2>Boosters</h2>
-      <p>Boosters to Nudge You Forward</p>
-      <div>
-        <h3>Hint Spark:</h3>
-        <p>Reveals a possible match</p>
-        <img src="../img/boosters/bones.png" alt="bones" />
+      <h2 class="boosters-title">Boosters</h2>
+      <p class="boosters-subtitle">Boosters to Nudge You Forward</p>
+
+      <div class="booster__div">
+        <h3 class="booster__title">Hint Spark:</h3>
+        <p class="booster__description">Reveals a possible match</p>
+        <img
+          class="booster__image--bones"
+          src="../img/boosters/bones.png"
+          alt="bones"
+        />
       </div>
-      <div>
-        <h3>Tile Swap:</h3>
-        <p>Swaps two tiles in your queue</p>
-        <img src="../img/boosters/arrows.png" alt="arrows" />
+
+      <div class="booster__div">
+        <h3 class="booster__title">Tile Swap:</h3>
+        <p class="booster__description">Swaps two tiles in your queue</p>
+        <img
+          class="booster__image--arrows"
+          src="../img/boosters/arrows.png"
+          alt="arrows"
+        />
       </div>
-      <div>
-        <h3>Clear Set:</h3>
-        <p>Removes any group of 3 tiles at once</p>
-        <img src="../img/boosters/cup.png" alt="cup" />
+
+      <div class="booster__div">
+        <h3 class="booster__title">Clear Set:</h3>
+        <p class="booster__description">Removes any group of 3 tiles at once</p>
+        <img
+          class="booster__image--cup"
+          src="../img/boosters/cup.png"
+          alt="cup"
+        />
       </div>
     </div>
   </div>
 </section>
 
-      <section>
+      <section id="zen-mode" class="zen-mode">
   <div class="container">
     <div class="wrapper">
-      <h2>Zen Mode</h2>
-      <p>Unwind with every match</p>
-      <div>
-        <div>
-          <p>
-            Zen Mode in Tile Rush is designed specifically for players who want
-            a stress-free, calming experience.
-          </p>
-        </div>
+      <h2 class="zen-title">Zen Mode</h2>
+      <p class="zen-subtitle">Unwind with every match</p>
+
+      <div class="zen-block first">
+        <p class="zen-description">
+          Zen Mode in Tile Rush is designed specifically for players who want a
+          stress-free, calming experience.
+        </p>
       </div>
-      <div>
-        <div>
-          <p>
-            There are no time limits, no life counters, and no pressure—just
-            you, the tiles, and a peaceful soundtrack.
-          </p>
-        </div>
+
+      <div class="zen-block--double second">
+        <p class="zen-description">
+          There are no time limits, no life counters, and no pressure—just you,
+          the tiles, and a peaceful soundtrack.
+        </p>
       </div>
-      <div>
-        <div>
-          <p>
-            This mode is perfect for winding down before bed, staying focused
-            during breaks, or simply enjoying a mindful puzzle session without
-            distraction.
-          </p>
-        </div>
+
+      <div class="zen-block third">
+        <p class="zen-description">
+          This mode is perfect for winding down before bed, staying focused
+          during breaks, or simply enjoying a mindful puzzle session without
+          distraction.
+        </p>
       </div>
-      <div>
-        <div>
-          <p>
-            The design focuses on visual softness, smooth animations, and
-            ambient audio to help you fully relax while playing.
-          </p>
-        </div>
+
+      <div class="zen-block--double fourth">
+        <p class="zen-description">
+          The design focuses on visual softness, smooth animations, and ambient
+          audio to help you fully relax while playing.
+        </p>
       </div>
-      <div>
-        <div>
-          <p>
-            Whether you're meditating through matches or escaping the noise of
-            daily life, Zen Mode offers a pure and rejuvenating way to enjoy the
-            game at your own rhythm.
-          </p>
-        </div>
+
+      <div class="zen-block fifth">
+        <p class="zen-description">
+          Whether you're meditating through matches or escaping the noise of
+          daily life, Zen Mode offers a pure and rejuvenating way to enjoy the
+          game at your own rhythm.
+        </p>
       </div>
-      <div>
-        <div><p>It's not just a mode—it’s a digital sanctuary.</p></div>
+
+      <div class="zen-block--double sixth">
+        <p class="zen-description">
+          It's not just a mode—it’s a digital sanctuary.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-      <section>
+      <section id="special" class="special">
   <div class="container">
     <div class="wrapper">
-      <h2>What make it Special</h2>
-      <p>Why Players Choose Tile Rush</p>
-      <div>
-        <img src="../img/special/hand.png" alt="hand" />
-        <p>No ads interrupt your session</p>
-      </div>
-      <div>
-        <img src="../img/special/wifi.png" alt="wifi" />
-        <p>Fully offline capability</p>
-      </div>
-      <div>
-        <img src="../img/special/mountain.png" alt="mountain" />
-        <p>Beautiful and evolving tile theme (Seasons, Nature, Abstract)</p>
-      </div>
-      <div>
-        <img src="../img/special/clock.png" alt="clock" />
-        <p>Perfectly tuned difficulty curve</p>
-      </div>
-      <div>
-        <img src="../img/special/puzzle.png" alt="puzzle" />
-        <p>Designed by puzzle lovers for puzzle lovers</p>
+      <h2 class="special__title">What make it <br />Special</h2>
+      <p class="special__subtitle">Why Players Choose Tile Rush</p>
+      <div class="special__list">
+        <div class="special__item">
+          <img class="special__icon" src="../img/special/hand.png" alt="hand" />
+          <p class="special__text">No ads interrupt your session</p>
+        </div>
+
+        <div class="special__item">
+          <img class="special__icon" src="../img/special/wifi.png" alt="wifi" />
+          <p class="special__text">Fully offline capability</p>
+        </div>
+
+        <div class="special__item">
+          <img
+            class="special__icon"
+            src="../img/special/mountain.png"
+            alt="mountain"
+          />
+          <p class="special__text">
+            Beautiful and evolving tile theme (Seasons, Nature, Abstract)
+          </p>
+        </div>
+
+        <div class="special__item">
+          <img
+            class="special__icon"
+            src="../img/special/clock.png"
+            alt="clock"
+          />
+          <p class="special__text">Perfectly tuned difficulty curve</p>
+        </div>
+
+        <div class="special__item">
+          <img
+            class="special__icon"
+            src="../img/special/puzzle.png"
+            alt="puzzle"
+          />
+          <p class="special__text">
+            Designed by puzzle lovers for puzzle lovers
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-      <section>
+      <section id="testimonials">
   <div class="container">
     <div class="wrapper"></div>
   </div>
 </section>
 
-      <section>
+      <section class="faq" id="faq">
   <div class="container">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="accordion-container">
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">Is Tile Rush completely free to play?</h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Yes, Tile Rush is entirely free to download and play. All levels
+              can be accessed without any payment. While there are optional
+              in-game purchases available (such as boosters or visual themes),
+              none of them are necessary to enjoy the full experience. We’ve
+              carefully designed the game to ensure that progress is possible
+              for all players without ever needing to spend money. Our goal is
+              to provide a relaxing puzzle journey without any paywalls. Players
+              who want to support us can do so through these optional extras.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">
+              Do I need an internet connection to play Tile Rush?
+            </h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              No, you do not need an internet connection to enjoy the game. Tile
+              Rush is fully playable offline, making it ideal for travel,
+              commutes, or relaxing moments without Wi-Fi or mobile data. All
+              features, including boosters and Zen Mode, are accessible in
+              offline mode. The game only requires an internet connection if
+              you're updating it or making an optional purchase. This allows you
+              to enjoy uninterrupted gameplay wherever you are. It’s truly a
+              game that travels with you.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">
+              What makes Tile Rush different from other match-3 puzzle games?
+            </h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Tile Rush stands out for its relaxing, no-pressure approach.
+              Unlike many other puzzle games, there are no timers, no intrusive
+              ads, and no lives system that forces you to wait or pay. The pace
+              is entirely up to the player. Every level is designed to be both
+              calming and intellectually satisfying. In addition, our Zen Mode
+              offers an endless play option with no objectives—just peaceful
+              matching. Combined with high-quality visuals and intuitive
+              gameplay, it’s the perfect escape from fast-paced mobile games.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">How do boosters work in the game?</h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Boosters are tools you can use to help clear difficult levels.
+              They include Hint Spark, Tile Swap, and Clear Set, each serving a
+              different purpose. You can earn boosters by completing certain
+              levels, finding extra matches, or through optional purchases. They
+              are not essential for completing levels, but they’re helpful for
+              when you feel stuck or want a bit of an edge. We made sure
+              boosters are balanced so that gameplay remains fair and rewarding.
+              Using them is completely optional and up to you.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">Are new levels added regularly?</h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Yes, we continuously work on expanding the game. With each major
+              update, we introduce new levels, puzzles, and sometimes even
+              special themed events. We also listen to community feedback to
+              improve level design and adjust difficulty where needed. These
+              updates are rolled out automatically if you’re connected to the
+              internet. You’ll be notified when new content becomes available.
+              Our development roadmap includes seasonal tilesets and monthly
+              puzzle packs to keep the game feeling fresh.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">
+              What is Zen Mode and how is it different from regular gameplay?
+            </h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Zen Mode is a special game mode where there are no goals or level
+              restrictions. You simply match tiles in an endless loop designed
+              for relaxation. There’s no pressure to complete objectives or earn
+              stars—just pure gameplay flow. It’s perfect for winding down after
+              a long day or taking a mindful break. Many players use it for
+              stress relief or background play while listening to music or
+              podcasts. You can switch to Zen Mode from the main menu anytime.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">
+              How difficult is the game? Is it suitable for all ages?
+            </h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Tile Rush is designed to be accessible and enjoyable for players
+              of all ages. The early levels are simple enough for beginners and
+              children, while later stages become more strategic and complex.
+              There are no time limits, which removes unnecessary stress and
+              allows players to learn at their own pace. The interface is
+              intuitive and easy to navigate, making it suitable for younger
+              players. At the same time, puzzle enthusiasts will find enough
+              depth in the later levels to stay engaged and challenged.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">Can I sync my progress across devices?</h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Currently, Tile Rush does not offer cross-device syncing. Your
+              progress is saved locally on the device where you play. However,
+              we are working on implementing a cloud-save feature in a future
+              update, which will allow you to continue playing seamlessly on
+              other devices. In the meantime, we recommend backing up your
+              device regularly to avoid any accidental data loss. Once cloud
+              sync becomes available, you’ll receive a notification with setup
+              instructions. We know this is important and appreciate your
+              patience.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">Are there any ads in the game?</h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              No, Tile Rush is an ad-free experience by default. We believe that
+              uninterrupted play is key to relaxation, which is why we do not
+              serve video ads or interstitial pop-ups. All our monetization is
+              based on optional in-game purchases only. This means you can enjoy
+              as many levels as you want without being interrupted. If this ever
+              changes, we’ll offer ad-free versions and be transparent about the
+              choices. For now, we’re proud to provide a clean and calm puzzle
+              environment.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">
+              How can I report a bug or suggest a feature?
+            </h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              We welcome all feedback from our players. If you encounter any
+              issues or have suggestions, please email us at info@mindrush.pro.
+              Include your device model, game version, and a description of the
+              issue or idea. Our support team typically responds within 24–48
+              hours. We take all user feedback seriously and use it to improve
+              the game with each update. Many of our new features and level
+              tweaks have come directly from player input.
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <div class="ac-div">
+            <h2 class="ac-header">Is Tile Rush safe for children to play?</h2>
+            <button type="button" class="ac-trigger"></button>
+          </div>
+
+          <div class="ac-panel">
+            <p class="ac-text">
+              Yes, Tile Rush is designed to be family-friendly. The game does
+              not contain any explicit content, microtransactions that encourage
+              excessive spending, or social features requiring parental
+              supervision. It’s a safe, calm, and enriching experience that
+              supports logical thinking and pattern recognition. We do recommend
+              that parents monitor very young children during play to help them
+              understand the controls and avoid accidental purchases. Otherwise,
+              it’s a great game for kids to enjoy independently or with family.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container">
     <div class="wrapper">
       <div class="footer_content">
