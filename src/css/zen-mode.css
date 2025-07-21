@@ -83,7 +83,7 @@
   background-color: var(--color-green);
 }
 .zen-block--double.second {
-  background-image: url(../img/zen-mode/block_2.png);
+  background-image: url(/img/zen-mode/block_2.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -91,7 +91,7 @@
   background-color: var(--color-yellow);
 }
 .zen-block--double.fourth {
-  background-image: url(../img/zen-mode/block_4.png);
+  background-image: url(/img/zen-mode/block_4.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -99,7 +99,7 @@
   background-color: var(--color-pink);
 }
 .zen-block--double.sixth {
-  background-image: url(../img/zen-mode/block_6.png);
+  background-image: url(/img/zen-mode/block_6.png);
   background-repeat: no-repeat;
   background-position: center center;
 }

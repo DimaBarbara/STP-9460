@@ -12,7 +12,7 @@
   max-width: 288px;
   margin: 0 auto;
   z-index: 1000;
-  background-image: url('../img/header/header.png');
+  background-image: url('/img/header/header.png');
   height: 62px;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +33,7 @@
 }
 .nav.nav--active {
   height: 550px;
-  background-image: url('../img/header/header-menu.png');
+  background-image: url('/img/header/header-menu.png');
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -97,7 +97,7 @@
     padding-top: 24px;
   }
   .nav {
-    background-image: url('../img/header/header-desk.png');
+    background-image: url('/img/header/header-desk.png');
     width: 1040px;
     height: 181px;
     background-repeat: no-repeat;
