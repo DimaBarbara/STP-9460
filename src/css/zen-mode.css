@@ -103,3 +103,76 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+@media screen and (min-width: 1200px) {
+  .zen-mode {
+    scroll-margin-top: 180px;
+  }
+  .zen-mode .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    position: relative;
+  }
+  .zen-title {
+    font-size: 48px;
+    text-align: start;
+    margin-left: 89px;
+    margin-bottom: 16px;
+  }
+  .zen-subtitle {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 89px;
+    margin-bottom: 40px;
+  }
+  .zen-block {
+    width: 1031px;
+    height: 249px;
+    padding: 0 64px;
+    margin-right: -104px;
+    margin-bottom: 40px;
+  }
+
+  .zen-block--double {
+    width: 1031px;
+    height: 249px;
+    margin-left: -104px;
+    margin-bottom: 40px;
+  }
+
+  .zen-description {
+    font-size: 20px;
+
+    border-radius: 35px;
+    padding: 24px;
+    width: auto;
+    height: auto;
+    background-color: var(--color-white);
+  }
+  .zen-block.first {
+    background-color: var(--color-green);
+  }
+  .zen-block--double.second {
+    background-image: url(/img/zen-mode/block_2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .zen-block.third {
+    background-color: var(--color-yellow);
+  }
+  .zen-block--double.fourth {
+    background-image: url(/img/zen-mode/block_4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .zen-block.fifth {
+    background-color: var(--color-pink);
+  }
+  .zen-block--double.sixth {
+    background-image: url(/img/zen-mode/block_6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

@@ -25,13 +25,25 @@
   color: var(--color-black);
   margin-bottom: 16px;
 }
+.levels-div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.levels-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
 .levels-description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--color-black);
-  margin: 16px;
 }
+
 .levels-image--cube {
   width: 136px;
   height: 136px;
@@ -57,4 +69,66 @@
   width: 158px;
   height: 152px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .levels {
+    padding-top: 32px;
+    scroll-margin-top: 180px;
+  }
+  .levels .wrapper {
+    border-radius: 35px;
+    margin-bottom: 0;
+    padding: 40px 89px;
+    margin-bottom: 64px;
+  }
+  .levels-title {
+    font-size: 48px;
+    text-align: start;
+    margin-bottom: 16px;
+  }
+  .levels-intro {
+    font-size: 20px;
+    text-align: start;
+
+    margin-bottom: 16px;
+  }
+  .levels-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .levels-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .levels-description {
+    font-size: 20px;
+    margin: 0;
+    width: 433px;
+  }
+  .levels-image--cube {
+    width: 293px;
+    height: 293px;
+    margin: 0;
+  }
+  .levels-image--candy {
+    width: 309px;
+    height: 263px;
+    margin: 0;
+  }
+
+  .levels-image--tv {
+    width: 290px;
+    height: 310px;
+    margin: 0;
+  }
+  .levels-image--present {
+    width: 274px;
+    height: 331px;
+    margin: 0;
+  }
+  .levels-image--firecracker {
+    width: 320px;
+    height: 306px;
+    margin: 0;
+  }
 }

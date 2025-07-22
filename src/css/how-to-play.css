@@ -45,11 +45,6 @@
   width: 141px;
   margin-top: 10px;
 }
-.how-to-play__div {
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-}
 .how-to-play__step-image--square {
   width: 150px;
   height: 150px;
@@ -84,4 +79,77 @@
   position: absolute;
   top: 10px;
   right: -17px;
+}
+@media screen and (min-width: 1200px) {
+  .how-to-play .wrapper {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .how-to-play__title {
+    font-size: 48px;
+    text-align: start;
+    margin-left: 89px;
+  }
+  .how-to-play__subtitle {
+    font-size: 20px;
+    text-align: start;
+    margin-top: 16px;
+    margin-left: 89px;
+  }
+  .how-to-play__step {
+    margin-top: 0;
+    width: 300px;
+    height: 300px;
+  }
+  .how-to-play__step-number {
+    font-size: 54px;
+  }
+  .how-to-play__step-description {
+    font-size: 20px;
+    width: 226px;
+    margin-top: 16px;
+  }
+  .how-to-play__div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px 70px;
+    margin-top: 40px;
+  }
+  .how-to-play__step-image--square {
+    width: 178px;
+    height: 178px;
+
+    top: 150px;
+    right: -30px;
+  }
+  .how-to-play__step-image--puzzle {
+    width: 225px;
+    height: 212px;
+
+    top: 150px;
+    right: -60px;
+  }
+  .how-to-play__step-image--reward {
+    width: 186px;
+    height: 186px;
+
+    top: 150px;
+    right: -55px;
+  }
+  .how-to-play__step-image--lamp {
+    width: 201px;
+    height: 201px;
+    top: 140px;
+    right: -80px;
+  }
+  .how-to-play__step-image--time {
+    width: 212px;
+    height: 212px;
+    transform: rotate(18deg);
+    top: 140px;
+    right: -80px;
+  }
 }
