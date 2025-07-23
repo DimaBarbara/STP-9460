@@ -13,10 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new Swiper('.mySwiper', {
     modules: [Pagination, Navigation, Keyboard],
-    slidesPerView: 3.5,
-    spaceBetween: 20,
     loop: false,
-    centeredSlides: true,
+    centeredSlides: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -33,10 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 20,
       },
       1200: {
-        slidesPerView: 3.5,
+        slidesPerView: 3,
         slidesPerGroup: 2,
+        spaceBetween: 24,
       },
     },
   });
