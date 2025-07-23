@@ -59,6 +59,78 @@
   position: absolute;
   width: 102px;
   height: 130px;
-  top: 30px;
-  right: -5px;
+  top: 20px;
+  right: 5px;
+}
+.desktop-only {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .boosters {
+    scroll-margin-top: 180px;
+    padding-bottom: 64px;
+  }
+  .boosters-title {
+    font-size: 48px;
+    text-align: start;
+    margin-bottom: 16px;
+    margin-left: 89px;
+  }
+  .boosters-subtitle {
+    display: flex;
+    font-size: 20px;
+    text-align: start;
+    margin-bottom: 40px;
+    margin-left: 89px;
+  }
+  .booster__main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    order: 1;
+  }
+  .booster__div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+  }
+  .booster__title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .booster__description {
+    font-weight: 400;
+    font-size: 20px;
+    width: 211px;
+  }
+  .booster__image--bones {
+    width: 222px;
+    height: 222px;
+    top: 130px;
+    right: -40px;
+  }
+  .booster__image--arrows {
+    width: 229px;
+    height: 229px;
+    top: 130px;
+    right: -60px;
+  }
+  .booster__image--cup {
+    width: 145px;
+    height: 184px;
+    top: 150px;
+    right: -10px;
+  }
+  .desktop-only {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--color-black);
+    width: 576px;
+  }
 }

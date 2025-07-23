@@ -42,3 +42,49 @@
   margin-left: auto;
   margin-top: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .game_features .wrapper {
+    position: relative;
+  }
+  .game_features {
+    scroll-margin-top: 170px;
+
+    padding-bottom: 64px;
+  }
+  .game_features__title {
+    font-size: 48px;
+    text-align: start;
+    margin-bottom: 15px;
+    margin-left: 89px;
+  }
+  .game_features__div_descr {
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+  }
+  .game_features__description {
+    font-size: 20px;
+    width: 512px;
+    margin-left: 88px;
+  }
+  .game_features__description--double {
+    font-size: 20px;
+    width: 512px;
+    margin-left: 168px;
+  }
+  .game_features__icon {
+    position: absolute;
+    top: -48px;
+    left: -60px;
+    z-index: 0;
+  }
+  .game_features__img {
+    position: absolute;
+    width: 485px;
+    height: 615px;
+    margin-left: auto;
+    margin-top: 0;
+    top: 60px;
+    right: -20px;
+  }
+}

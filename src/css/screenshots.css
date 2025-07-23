@@ -61,9 +61,10 @@
   border-radius: 200px 200px 0 0;
 }
 
-.screenshots_swiper_image10 {}
+.screenshots_swiper_image10 {
+}
 
-.screenshots_swiper_image11{
+.screenshots_swiper_image11 {
   border-radius: 200px;
 }
 
@@ -108,7 +109,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: #6AC8FA !important;
+  background-color: #6ac8fa !important;
   opacity: 0.4 !important;
   margin: 0 4px !important;
   transition: opacity 0.3s !important;
@@ -155,12 +156,14 @@
     display: flex;
     text-align: flex-start;
     font-size: 48px;
+    margin-left: 89px;
   }
   .screenshots_intro {
     display: flex;
     text-align: flex-start;
     font-size: 20px;
     margin-bottom: 40px;
+    margin-left: 89px;
   }
 
   /* .swiper-slide {
