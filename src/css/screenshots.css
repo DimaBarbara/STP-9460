@@ -119,11 +119,6 @@
   opacity: 1 !important;
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 20px !important;
-}
-
 .swiper-controls .custom-nav {
   all: unset !important;
   display: flex !important;
@@ -135,6 +130,19 @@
   color: var(--color-black) !important;
   font-size: 24px !important;
   cursor: pointer !important;
+}
+
+.screenshots_section .swiper-button-next:after,
+.screenshots_section .swiper-button-prev:after {
+  color: var(--color-black);
+  opacity: 1;
+  font-size: 20px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.screenshots_section .swiper-button-disabled:after {
+  color: rgba(106, 200, 250, 0.4) !important;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1200px) {
@@ -165,25 +173,6 @@
     margin-bottom: 40px;
     margin-left: 89px;
   }
-
-  /* .swiper-slide {
-    transform: scale(0.9);
-    opacity: 0.5;
-    transition: all 0.3s ease;
-  } */
-
-  /* .swiper-slide {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    transform: scale(0.8);
-    opacity: 0.4;
-  } */
-
-  /* .swiper-slide-active,
-  .swiper-slide-duplicate-active {
-    transform: scale(0.9);
-    opacity: 1;
-    z-index: 2;
-  } */
 
   .swiper-slide.swiper-slide-visible.swiper-slide-next,
   .swiper-slide.swiper-slide-visible.swiper-slide-prev {

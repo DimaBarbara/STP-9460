@@ -5,18 +5,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swiperEl = document.querySelector('.mySwiper');
+  const swiperEl = document.querySelector('.mySwiper-ul');
   if (!swiperEl) {
     console.warn('Swiper елемент не знайдено');
     return;
   }
 
-  new Swiper('.mySwiper', {
+  new Swiper('.mySwiper-ul', {
     modules: [Pagination, Navigation, Keyboard],
-    slidesPerView: 3.5,
-    spaceBetween: 20,
     loop: false,
-    centeredSlides: true,
+    centeredSlides: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -33,10 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 80,
       },
       1200: {
-        slidesPerView: 3.5,
+        slidesPerView: 2,
         slidesPerGroup: 2,
+        spaceBetween: -50,
       },
     },
   });
