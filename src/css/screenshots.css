@@ -189,4 +189,8 @@
   .swiper-controls {
     padding: 0 450px !important;
   }
+
+  .screenshots_section .swiper-slide {
+    width: 310px !important;
+  }
 }
