@@ -1,13 +1,15 @@
 .scroll-up-btn {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  padding: 10px 15px;
+  bottom: 20px;
+  right: 50px;
+  border-radius: 150px;
+  padding: 16px;
+  width: 124px;
+  height: 62px;
   font-size: 20px;
   border: none;
-  border-radius: 50%;
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: var(--color-white);
+  color: var(--color-black);
   cursor: pointer;
   display: none;
   z-index: 9999;
@@ -15,6 +17,6 @@
 }
 
 .scroll-up-btn:hover {
-  background-color: var(--color-blue-hover);
+  background-color: var(--color-blue);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }

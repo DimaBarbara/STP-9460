@@ -1,7 +1,11 @@
+.testimonials_section {
+  scroll-margin-top: 20px;
+}
+
 .testimonials_section .wrapper {
   width: 288px;
   padding-top: 32px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .testimonials_title {
@@ -158,6 +162,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .testimonials_section {
+    scroll-margin-top: 180px;
+  }
+
   .testimonials_section .wrapper {
     width: 1200px;
     padding: 0;

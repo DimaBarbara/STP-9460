@@ -55,6 +55,9 @@
   padding: 0 40px;
   order: 4;
 }
+.hero__btn:hover {
+  background: var(--color-blue-hover)
+}
 .desktop__only {
   display: none;
 }
