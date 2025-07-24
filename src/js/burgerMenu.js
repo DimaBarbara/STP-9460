@@ -10,7 +10,7 @@ burger.addEventListener('click', () => {
   background.classList.toggle('nav--active');
   icon.setAttribute(
     'href',
-    isOpen ? '/img/svg/close.svg' : '/img/svg/burger.svg'
+    isOpen ? '/img/sprite.svg#icon-close' : '/img/sprite.svg#icon-burger'
   );
 });
 menuLinks.forEach(link => {
@@ -18,7 +18,7 @@ menuLinks.forEach(link => {
     e.preventDefault();
     menu.classList.remove('menu__list--active');
     background.classList.remove('nav--active');
-    icon.setAttribute('href', '/img/svg/burger.svg');
+    icon.setAttribute('href', '/img/sprite.svg#icon-burger');
 
     const href = link.getAttribute('href');
     const targetSection = document.querySelector(href);
