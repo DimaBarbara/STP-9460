@@ -1,3 +1,7 @@
+.screenshots_section {
+  scroll-margin-top: 40px;
+}
+
 .screenshots_section .wrapper {
   width: 288px;
   margin: 0 auto;
@@ -146,6 +150,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .screenshots_section {
+    scroll-margin-top: 160px;
+  }
+
   .screenshots_section .wrapper {
     width: 1040px;
     margin: 0 auto;

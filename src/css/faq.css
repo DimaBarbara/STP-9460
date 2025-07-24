@@ -2,7 +2,7 @@
   scroll-margin-top: 40px;
 }
 .faq .wrapper {
-  width: 862px;
+  width: 288px;
 }
 .faq__title {
   font-family: 'Jua', sans-serif;
@@ -49,12 +49,10 @@
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: var(--color-black);
-  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .faq {
-    scroll-margin-top: 180px;
-    padding-top: 30px;
+    scroll-margin-top: 160px;
     margin: 0 auto;
   }
   .faq__title {

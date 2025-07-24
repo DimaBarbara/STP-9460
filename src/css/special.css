@@ -2,7 +2,7 @@
   scroll-margin-top: 40px;
 }
 .special .wrapper {
-  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .special__title {
   font-family: 'Jua', sans-serif;
@@ -39,7 +39,7 @@
 }
 @media screen and (min-width: 1200px) {
   .special {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 120px;
   }
   .br {
     display: none;
