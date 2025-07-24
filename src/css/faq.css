@@ -24,6 +24,10 @@
   background: var(--color-white);
   border: none;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
 }
 .ac-header {
   font-family: 'Jua', sans-serif;
@@ -44,6 +48,14 @@
   margin-top: -40px;
   position: relative;
   z-index: 0;
+}
+.ac-trigger svg {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.ac.is-active .ac-trigger svg {
+  transform: rotate(-0deg);
 }
 .ac-text {
   font-family: 'Poppins', sans-serif;

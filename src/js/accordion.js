@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  new Accordion('.accordion-container', {
+  new Accordion('[data-accordion]', {
     duration: 300,
     showMultiple: false,
     openOnInit: [0],

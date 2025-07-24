@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const zenBlocks = document.querySelectorAll('.zen-block, .zen-block--double');
-
-  if (!zenBlocks.length) {
-    console.warn('zen-блоки не знайдені в DOM');
-    return;
-  }
+  const zenBlocks = document.querySelectorAll('[data-zen-block]');
 
   const observer = new IntersectionObserver(
     entries => {

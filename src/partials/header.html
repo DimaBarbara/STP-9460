@@ -1,7 +1,7 @@
-<header class="header" id="header">
+<header class="header" id="header" data-nav>
   <div class="container">
     <div class="wrapper">
-      <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
+      <nav class="nav" data-nav-bg aria-label="Primary Navigation">
         <div class="nav-div">
           <a href="#" aria-label="Site logo">
             <picture>
@@ -24,10 +24,10 @@
             </picture>
           </a>
           <button
-            id="burger"
-            aria-label="Open menu"
             class="burger"
             type="button"
+            aria-label="Open menu"
+            data-burger
           >
             <svg
               width="28"
@@ -36,46 +36,58 @@
               focusable="false"
               class="svg"
             >
-              <use id="burger-icon" href="/img/sprite.svg#icon-burger"></use>
+              <use data-burger-icon href="/img/sprite.svg#icon-burger"></use>
             </svg>
           </button>
         </div>
-        <ul class="menu__list" id="menu">
+        <ul class="menu__list" data-menu>
           <li class="menu__item">
-            <a class="menu__link" href="#header">Home</a>
+            <a class="menu__link" href="#header" data-menu-link>Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#about-game">About the Game</a>
+            <a class="menu__link" href="#about-game" data-menu-link
+              >About the Game</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#how-to-play">How to play</a>
+            <a class="menu__link" href="#how-to-play" data-menu-link
+              >How to play</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#game_features">Game Features</a>
+            <a class="menu__link" href="#game_features" data-menu-link
+              >Game Features</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#screenshots">Screenshots</a>
+            <a class="menu__link" href="#screenshots" data-menu-link
+              >Screenshots</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#levels">Levels</a>
+            <a class="menu__link" href="#levels" data-menu-link>Levels</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#boosters">Boosters</a>
+            <a class="menu__link" href="#boosters" data-menu-link>Boosters</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#zen-mode">Zen Mode</a>
+            <a class="menu__link" href="#zen-mode" data-menu-link>Zen Mode</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#special">What Makes it Special</a>
+            <a class="menu__link" href="#special" data-menu-link
+              >What Makes it Special</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#testimonials">Testimonials</a>
+            <a class="menu__link" href="#testimonials" data-menu-link
+              >Testimonials</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#faq">FAQ</a>
+            <a class="menu__link" href="#faq" data-menu-link>FAQ</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#footer">Contact</a>
+            <a class="menu__link" href="#footer" data-menu-link>Contact</a>
           </li>
         </ul>
       </nav>

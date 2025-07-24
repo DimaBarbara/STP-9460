@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const cookiesBanner = document.querySelector('.cookies');
-  const acceptBtn = document.querySelector('.cookies__btn.accept');
-  const declineBtn = document.querySelector('.cookies__btn.decline');
+  const cookiesBanner = document.querySelector('[data-cookies]');
+  const acceptBtn = document.querySelector('[data-cookies-accept]');
+  const declineBtn = document.querySelector('[data-cookies-decline]');
 
   const userCookieChoice = localStorage.getItem('cookiesAccepted');
 

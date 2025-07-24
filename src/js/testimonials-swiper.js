@@ -5,27 +5,27 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swiperEl = document.querySelector('.mySwiper-ul');
+  const swiperEl = document.querySelector('[data-swiper-ul]');
   if (!swiperEl) {
     console.warn('Swiper елемент не знайдено');
     return;
   }
 
-  new Swiper('.mySwiper-ul', {
+  new Swiper('[data-swiper-ul]', {
     modules: [Pagination, Navigation, Keyboard],
     loop: false,
     centeredSlides: false,
     pagination: {
-      el: '.swiper-pagination',
+      el: '[data-swiper-pagination]',
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '[data-swiper-button-next]',
+      prevEl: '[data-swiper-button-prev]',
     },
     keyboard: {
-    enabled: true,
-    onlyInViewport: true,
+      enabled: true,
+      onlyInViewport: true,
     },
     breakpoints: {
       320: {
