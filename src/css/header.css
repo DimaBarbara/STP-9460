@@ -26,7 +26,7 @@
 .nav--scrolled {
   margin-top: 0;
 }
-.dolphin_svg {
+.dolphin__icon {
   width: 32px;
   height: 32px;
   display: block;
@@ -97,7 +97,7 @@
     padding-top: 24px;
   }
   .nav {
-    background-image: url('/img/header/header-desk.png');
+    background-image: url('/img/header/header-desktop.png');
     width: 1040px;
     height: 181px;
     background-repeat: no-repeat;
@@ -116,10 +116,11 @@
     width: auto;
     padding: 0;
   }
-  .dolphin_svg {
+  .dolphin__icon {
     width: 58px;
-    height: 60px;
+    height: 58px;
     display: block;
+    margin-bottom: 40px;
   }
   .burger {
     display: none;

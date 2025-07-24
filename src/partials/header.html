@@ -4,9 +4,24 @@
       <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
         <div class="nav-div">
           <a href="#" aria-label="Site logo">
-            <svg width="32" height="32" class="dolphin_svg">
-              <use href="/img/svg/dolphin.svg"></use>
-            </svg>
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/header/dolphin-desktop.png   1x,
+                  /img/header/dolphin-desktop2x.png 2x
+                "
+              />
+              <img
+                class="dolphin__icon"
+                src="/img/header/dolphin.png"
+                alt="dolphin"
+                srcset="
+                  /img/header/dolphin.png   1x,
+                  /img/header/dolphin2x.png 2x
+                "
+              />
+            </picture>
           </a>
           <button
             id="burger"

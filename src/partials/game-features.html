@@ -3,87 +3,80 @@
     <div class="wrapper">
       <h2 class="game_features__title">Game Features</h2>
       <div class="game_features__div_descr">
-        <p class="game_features__description">
-          <img
-            src="/img/game-features/ellipse-green.webp"
-            width="60"
-            height="60"
-            alt="green blur"
-            class="game-features_blur-one"
-          />
-          <!-- <svg width="120" height="120" class="game_features__icon">
-            <use href="/img/svg/green.svg"></use>
-          </svg> -->
-          Tap tiles to pick them up
-        </p>
-        <p class="game_features__description--double">
-          <img
-            src="/img/game-features/ellipse-blue.webp"
-            width="60"
-            height="60"
-            alt="blue blur"
-            class="game-features_blur-two"
-          />
-          No timers, no rush — play at your own pace
-        </p>
+        <ul class="game_features__list">
+          <li class="game_features__item_one">
+            <span class="game_features__blur game_features__blur--green"></span>
+            <p class="game_features__text">Tap tiles to pick them up</p>
+          </li>
+          <li class="game_features__item_two">
+            <span class="game_features__blur game_features__blur--blue"></span>
+            <p class="game_features__text">
+              No timers, no rush — play at your own pace
+            </p>
+          </li>
+          <li class="game_features__item_three">
+            <span
+              class="game_features__blur game_features__blur--yellow"
+            ></span>
+            <p class="game_features__text">
+              Minimalist visuals with vibrant color palettes
+            </p>
+          </li>
+          <li class="game_features__item_four">
+            <span class="game_features__blur game_features__blur--pink"></span>
+            <p class="game_features__text">
+              Smart hint system that assists, not intrudes
+            </p>
+          </li>
+          <li class="game_features__item_five">
+            <span class="game_features__blur game_features__blur--blue"></span>
+            <p class="game_features__text">
+              Light background music to support focus and calm
+            </p>
+          </li>
+          <li class="game_features__item_six">
+            <span class="game_features__blur game_features__blur--green"></span>
+            <p class="game_features__text">
+              Available offline for uninterrupted gameplay
+            </p>
+          </li>
+          <li class="game_features__item_seven">
+            <span
+              class="game_features__blur game_features__blur--yellow"
+            ></span>
+            <p class="game_features__text">Supports both phones and tablets</p>
+          </li>
+        </ul>
 
-        <p class="game_features__description">
-          <img
-            src="/img/game-features/ellipse-yellow.webp"
-            width="60"
-            height="60"
-            alt="yellow blur"
-            class="game-features_blur-tree"
-          />
-          Minimalist visuals with vibrant color palettes
-        </p>
-        <p class="game_features__description--double">
-          <img
-            src="/img/game-features/ellipse-pink.webp"
-            width="60"
-            height="60"
-            alt="pink blur"
-            class="game-features_blur-four"
-          />
-          Smart hint system that assists, not intrudes
-        </p>
-        <p class="game_features__description">
-          <img
-            src="/img/game-features/ellipse-blue.webp"
-            width="60"
-            height="60"
-            alt="blue blur"
-            class="game-features_blur-five"
-          />
-          Light background music to support focus and calm
-        </p>
-        <p class="game_features__description--double">
-          <img
-            src="/img/game-features/ellipse-green.webp"
-            width="60"
-            height="60"
-            alt="green blur"
-            class="game-features_blur-six"
-          />
-          Available offline for uninterrupted gameplay
-        </p>
-        <p class="game_features__description">
-          <img
-            src="/img/game-features/ellipse-yellow.webp"
-            width="60"
-            height="60"
-            alt="yellow blur"
-            class="game-features_blur-seven"
-          />
-          Supports both phones and tablets
-        </p>
+        <div class="game_features_img">
+          <span
+            class="game_features__blur_bg game_features__blur--green"
+          ></span>
+          <picture>
+            <source
+              srcset="
+                /img/game-features/media-main-desktop.png   1x,
+                /img/game-features/media-main-desktop2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 321px)"
+            />
+            <source
+              srcset="
+                /img/game-features/media-main.png   1x,
+                /img/game-features/media-main2x.png 2x
+              "
+              type="image/png"
+              media="(max-width: 320px)"
+            />
+            <img
+              src="/img/game-features/media-main-desktop.png 1x"
+              alt="screenshot 1"
+              class="game_features__img_kid"
+            />
+          </picture>
+        </div>
       </div>
-
-      <img
-        class="game_features__img"
-        alt="hi"
-        src="/img/game-features/hi.png"
-      />
     </div>
   </div>
 </section>

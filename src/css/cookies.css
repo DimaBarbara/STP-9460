@@ -1,9 +1,7 @@
 .cookies {
   display: flex;
-  gap: 41px;
   border-radius: 35px;
   width: 288px;
-  height: 302px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
   background: var(--color-white);
   padding: 15px 16px;
@@ -65,21 +63,26 @@
 @media screen and (min-width: 1200px) {
   .cookies {
     width: 1040px;
-    height: 267px;
     padding: 37px;
+    gap: 41px;
+    padding-bottom: 12px;
   }
   .cookies__image {
     display: none;
   }
   .cookies__desktop {
+    display: block;
     width: 226px;
     height: 242px;
+    margin-left: 37px;
   }
   .cookies__title {
+    display: block;
     font-size: 32px;
   }
   .cookies__text {
-    font-size: 23px;
+    font-size: 20px;
+    width: 597px;
   }
   .cookies__content {
     display: flex;

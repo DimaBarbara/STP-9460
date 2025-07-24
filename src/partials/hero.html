@@ -8,11 +8,21 @@
           <span class="hero__highlight--relax">Relax.</span>
           <span class="hero__highlight--repeat">Repeat.</span>
         </h1>
-        <img
-          class="hero__image"
-          src="/img/hero/hero.png"
-          alt="TileRush game screenshot"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /img/hero/media-hero-desktop.png   1x,
+              /img/hero/media-hero-desktop2x.png 2x
+            "
+          />
+          <img
+            class="hero__image"
+            src="/img/hero/media-hero.png"
+            srcset="/img/hero/media-hero.png 1x, /img/hero/media-hero2x.png 2x"
+            alt="TileRush game screenshot"
+          />
+        </picture>
         <p class="hero__description">
           Enjoy a peaceful match 3 puzzle adventure with hundreds of satisfying
           levels.
@@ -27,11 +37,18 @@
           </p>
         </button>
       </div>
-      <img
-        class="hero__image--under-title"
-        src="/img/hero/hero.png"
-        alt="TileRush game screenshot"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/img/hero/media-hero.png 1x, /img/hero/media-hero2x.png 2x"
+        />
+        <img
+          class="hero__image--under-title"
+          src="/img/hero/media-hero.png"
+          srcset="/img/hero/media-hero.png 1x, /img/hero/media-hero2x.png 2x"
+          alt="TileRush game screenshot"
+        />
+      </picture>
     </div>
   </div>
 </section>
