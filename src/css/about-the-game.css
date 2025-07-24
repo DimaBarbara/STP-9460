@@ -2,7 +2,7 @@
   scroll-margin-top: 40px;
 }
 .about-game .wrapper {
-  padding-top: 32px;
+  margin-top: 32px;
   width: 288px;
 }
 
@@ -20,7 +20,6 @@
   color: var(--color-black);
 }
 .about-game__description {
-  margin-top: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -32,6 +31,10 @@
 }
 .about-game__description.second {
   width: 113px;
+}
+
+.about-game__description.second-two {
+  width: 255px;
 }
 
 .about-game__photo-cont {
@@ -51,7 +54,7 @@
 }
 
 .about-game__img {
-  width: 203px;
+  max-width: 203px;
   height: 268px;
   position: relative;
   right: 40px;
@@ -81,7 +84,21 @@
   width: 213px;
   height: 263px;
   display: block;
-  right: 70px;
+  right: 50px;
+  margin: 16px 0;
+}
+
+.about-game__description.third {
+  margin-top: 16px;
+  position: relative;
+  left: 15px;
+}
+
+.about-game__description_text-bottom {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: var(--color-black);
+
 }
 
 .about-game__description_cont {
@@ -95,84 +112,73 @@
   .about-game .wrapper {
     padding-top: 64px;
     width: 1040px;
+    margin-top: 64px;
+    padding-bottom: 110px;
   }
+
   .about-game__cont {
-    padding: 40px 89px;
-    border-radius: 35px;
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
-    background: var(--color-yellow);
+    padding: 0;
+    height: 995px;
   }
+
   .about-game__title {
     font-size: 48px;
     text-align: start;
-  }
-  .about-game__description {
-    margin-top: 0;
-    font-size: 16px;
-  }
-  .about-game__description.first {
-    width: 371px;
-    margin-top: 48px;
-  }
-  .about-game__description.second {
-    margin-top: 20px;
-    width: 371px;
-  }
-
-  .about-game__photo-cont {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: visible;
-    align-items: flex-start;
-    z-index: 1;
-  }
-
-  .about-game__photo-cont > div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
+    margin-left: 89px;
+    padding-top: 40px;
   }
 
   .about-game__img {
-    width: 203px;
-    height: 268px;
+    max-width: 464px;
+    height: 590px;
     position: relative;
-    right: 40px;
-  }
-  .about-game__extra {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .about-game__photo-cont2 {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    width: 288px;
-    overflow: visible;
-  }
-
-  .about-game__img-wrapper {
-    position: relative;
-    margin-right: -90px;
-    z-index: 0;
-    flex-shrink: 0;
+    right: 58px;
+    bottom: 180px;
   }
 
   .about-game__img2 {
+    margin: 0;
+    width: 492px;
+    height: 608px;
     position: relative;
-    width: 213px;
-    height: 263px;
-    display: block;
-    right: 70px;
+    left: 23px;
+    bottom: 230px;
+    overflow: visible;
   }
 
-  .about-game__description_cont {
-    width: 131px;
-    z-index: 1;
+  .about-game__description {
+    font-size: 16px;
+  }
+
+  .about-game__description.first {
+    width: 371px;
+    margin-top: 16px;
+    margin-left: 89px;
+  }
+
+  .about-game__description.second {
+    width: 371px;
+    margin-left: 89px;
+  }
+
+  .about-game__description.second-two {
+    width: 371px;
+    margin-left: 89px;
+  }
+
+  .about-game__description.third {
+    margin: 0;
+    width: 402px;
     position: relative;
-    background-color: transparent;
+    left: 120px;
+    bottom: 130px;
+  }
+
+  .about-game__description_text-bottom {
+    width: 396px;
+      font-size: 16px;
+      position: relative;
+      left: 520px;
+      bottom: 640px;
   }
 }
