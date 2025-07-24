@@ -30,11 +30,24 @@
         </p>
       </div>
 
-      <img
-        class="game_features__img"
-        alt="hi"
-        src="/img/game-features/hi.png"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/game-features/media-main-desktop.png   1x,
+            /img/game-features/media-main-desktop2x.png 2x
+          "
+        />
+        <img
+          class="game_features__img"
+          src="/img/game-features/media-main.png"
+          srcset="
+            /img/game-features/media-main.png   1x,
+            /img/game-features/media-main2x.png 2x
+          "
+          alt="hi"
+        />
+      </picture>
     </div>
   </div>
 </section>

@@ -1,18 +1,41 @@
 <div class="container">
   <div class="wrapper">
     <div class="cookies">
-      <img
-        class="cookies__desktop"
-        src="/img/cookies/cookies.png"
-        alt="cookies"
-      />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/cookies/cookies-desktop.png   1x,
+            /img/cookies/cookies-desktop2x.png 2x
+          "
+        />
+        <img
+          class="cookies__desktop"
+          src="/img/cookies/cookies.png"
+          srcset="/img/cookies/cookies.png 1x, /img/cookies/cookies2x.png 2x"
+          alt="cookies"
+        />
+      </picture>
       <div>
         <h2 class="cookies__title">
-          <img
-            class="cookies__image"
-            src="/img/cookies/cookies.png"
-            alt="cookies"
-          />Cookies Policy
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/cookies/cookies-desktop.png   1x,
+                /img/cookies/cookies-desktop2x.png 2x
+              "
+            />
+            <img
+              class="cookies__image"
+              src="/img/cookies/cookies-desktop.png"
+              srcset="
+                /img/cookies/cookies.png   1x,
+                /img/cookies/cookies2x.png 2x
+              "
+              alt="cookies"
+            /> </picture
+          >Cookies Policy
         </h2>
         <div class="cookies__content">
           <p class="cookies__text">
