@@ -7,25 +7,21 @@ const nav = document.querySelector('[data-nav]');
 
 burger.addEventListener('click', () => {
   const isOpen = menu.dataset.menu === 'open';
-
-  // Переключення menu і background
   menu.dataset.menu = isOpen ? 'noopen' : 'open';
   background.dataset.navBg = isOpen ? 'noopen' : 'open';
 
   icon.setAttribute(
     'href',
-    isOpen ? '/img/sprite.svg#icon-burger' : '/img/sprite.svg#icon-close'
+    isOpen ? 'img/sprite.svg#icon-burger' : 'img/sprite.svg#icon-close'
   );
 });
 
 menuLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-
-    // Закриваємо меню
     menu.dataset.menu = 'noopen';
     background.dataset.navBg = 'noopen';
-    icon.setAttribute('href', '/img/sprite.svg#icon-burger');
+    icon.setAttribute('href', 'img/sprite.svg#icon-burger');
 
     const href = link.getAttribute('href');
     const target = document.querySelector(href);
