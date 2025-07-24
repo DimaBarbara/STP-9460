@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/STP-9460/assets/favicon-w1iDFKnE.png" />
+    <link rel="icon" type="image/x-icon" href="/STP-9460/assets/favicon-DKVPUXJL.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -35,19 +35,19 @@
     <script type="module" crossorigin src="/STP-9460/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-9460/assets/vendor-Dfuxjkjq.js">
     <link rel="stylesheet" crossorigin href="/STP-9460/assets/vendor-Ds_YmOBQ.css">
-    <link rel="stylesheet" crossorigin href="/STP-9460/assets/styles-DIUMtyb5.css">
+    <link rel="stylesheet" crossorigin href="/STP-9460/assets/styles-BmLRlSMk.css">
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header" id="header" data-nav>
   <div class="container">
     <div class="wrapper">
-      <nav class="nav" id="primary-nav" aria-label="Primary Navigation">
+      <nav class="nav" data-nav-bg aria-label="Primary Navigation">
         <div class="nav-div">
           <a href="#" aria-label="Site logo">
             <picture>
               <source
                 media="(min-width: 1200px)"
-                srcset="/STP-9460/assets/dolphin-desktop-DKVPUXJL.png 1x, /STP-9460/assets/dolphin-desktop2x-BXsFXvN4.png 2x"
+                srcset="/STP-9460/assets/favicon-DKVPUXJL.png 1x, /STP-9460/assets/dolphin-desktop2x-BXsFXvN4.png 2x"
               />
               <img
                 class="dolphin__icon"
@@ -58,10 +58,10 @@
             </picture>
           </a>
           <button
-            id="burger"
-            aria-label="Open menu"
             class="burger"
             type="button"
+            aria-label="Open menu"
+            data-burger
           >
             <svg
               width="28"
@@ -70,46 +70,58 @@
               focusable="false"
               class="svg"
             >
-              <use id="burger-icon" href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-burger"></use>
+              <use data-burger-icon href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-burger"></use>
             </svg>
           </button>
         </div>
-        <ul class="menu__list" id="menu">
+        <ul class="menu__list" data-menu>
           <li class="menu__item">
-            <a class="menu__link" href="#header">Home</a>
+            <a class="menu__link" href="#header" data-menu-link>Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#about-game">About the Game</a>
+            <a class="menu__link" href="#about-game" data-menu-link
+              >About the Game</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#how-to-play">How to play</a>
+            <a class="menu__link" href="#how-to-play" data-menu-link
+              >How to play</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#game_features">Game Features</a>
+            <a class="menu__link" href="#game_features" data-menu-link
+              >Game Features</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#screenshots">Screenshots</a>
+            <a class="menu__link" href="#screenshots" data-menu-link
+              >Screenshots</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#levels">Levels</a>
+            <a class="menu__link" href="#levels" data-menu-link>Levels</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#boosters">Boosters</a>
+            <a class="menu__link" href="#boosters" data-menu-link>Boosters</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#zen-mode">Zen Mode</a>
+            <a class="menu__link" href="#zen-mode" data-menu-link>Zen Mode</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#special">What Makes it Special</a>
+            <a class="menu__link" href="#special" data-menu-link
+              >What Makes it Special</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#testimonials">Testimonials</a>
+            <a class="menu__link" href="#testimonials" data-menu-link
+              >Testimonials</a
+            >
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#faq">FAQ</a>
+            <a class="menu__link" href="#faq" data-menu-link>FAQ</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#footer">Contact</a>
+            <a class="menu__link" href="#footer" data-menu-link>Contact</a>
           </li>
         </ul>
       </nav>
@@ -460,7 +472,7 @@
       <h2 class="screenshots_title">Screenshots</h2>
       <p class="screenshots_intro">Preview the Calm</p>
 
-      <div class="swiper mySwiper">
+      <div class="swiper" data-swiper>
         <div class="swiper-wrapper">
           <!-- screen 1 -->
           <div class="swiper-slide">
@@ -741,9 +753,18 @@
 
         <!-- Navigation buttons -->
         <div class="swiper-controls">
-          <div class="swiper-button-prev custom-nav"></div>
-          <div class="swiper-pagination custom-pagination"></div>
-          <div class="swiper-button-next custom-nav"></div>
+          <div
+            class="swiper-button-prev custom-nav"
+            data-swiper-button-prev
+          ></div>
+          <div
+            class="swiper-pagination custom-pagination"
+            data-swiper-pagination
+          ></div>
+          <div
+            class="swiper-button-next custom-nav"
+            data-swiper-button-next
+          ></div>
         </div>
       </div>
     </div>
@@ -930,21 +951,21 @@
       <h2 class="zen-title">Zen Mode</h2>
       <p class="zen-subtitle">Unwind with every match</p>
 
-      <div class="zen-block first">
+      <div class="zen-block first" data-zen-block>
         <p class="zen-description first">
           Zen Mode in Tile Rush is designed specifically for players who want a
           stress-free, calming experience.
         </p>
       </div>
 
-      <div class="zen-block--double second">
+      <div class="zen-block--double second" data-zen-block>
         <p class="zen-description second">
           There are no time limits, no life counters, and no pressure—just you,
           the tiles, and a peaceful soundtrack.
         </p>
       </div>
 
-      <div class="zen-block third">
+      <div class="zen-block third" data-zen-block>
         <p class="zen-description third">
           This mode is perfect for winding down before bed, staying focused
           during breaks, or simply enjoying a mindful puzzle session without
@@ -952,14 +973,14 @@
         </p>
       </div>
 
-      <div class="zen-block--double fourth">
+      <div class="zen-block--double fourth" data-zen-block>
         <p class="zen-description fourth">
           The design focuses on visual softness, smooth animations, and ambient
           audio to help you fully relax while playing.
         </p>
       </div>
 
-      <div class="zen-block fifth">
+      <div class="zen-block fifth" data-zen-block>
         <p class="zen-description fifth">
           Whether you're meditating through matches or escaping the noise of
           daily life, Zen Mode offers a pure and rejuvenating way to enjoy the
@@ -967,7 +988,7 @@
         </p>
       </div>
 
-      <div class="zen-block--double sixth">
+      <div class="zen-block--double sixth" data-zen-block>
         <p class="zen-description sixth">
           It's not just a mode—it’s a digital sanctuary.
         </p>
@@ -1077,7 +1098,7 @@
         <h2 class="testimonials_title">Testimonials</h2>
         <p class="testimonials_intro">What Our Players Say</p>
 
-        <div class="testimonials-swiper mySwiper-ul">
+        <div class="testimonials-swiper mySwiper-ul" data-swiper-ul>
           <div class="swiper-wrapper">
             <!-- testimonials 1 -->
             <div class="swiper-slide">
@@ -1310,9 +1331,18 @@
 
           <!-- Navigation buttons -->
           <div class="swiper-controls">
-            <div class="swiper-button-prev custom-nav"></div>
-            <div class="swiper-pagination custom-pagination"></div>
-            <div class="swiper-button-next custom-nav"></div>
+            <div
+              class="swiper-button-prev custom-nav"
+              data-swiper-button-prev
+            ></div>
+            <div
+              class="swiper-pagination custom-pagination"
+              data-swiper-pagination
+            ></div>
+            <div
+              class="swiper-button-next custom-nav"
+              data-swiper-button-next
+            ></div>
           </div>
         </div>
       </div>
@@ -1324,11 +1354,24 @@
   <div class="container">
     <div class="wrapper">
       <h2 class="faq__title">FAQ</h2>
-      <div class="accordion-container">
+      <div class="accordion-container" data-accordion>
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header">Is Tile Rush completely free to play?</span>
-            <span class=""></span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
 
           <div class="ac-panel">
@@ -1349,7 +1392,20 @@
             <span class="ac-header"
               >Do I need an internet connection to play Tile Rush?</span
             >
-            <span class="ac-arrow"></span>
+            <span
+              ><svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
 
           <div class="ac-panel">
@@ -1368,10 +1424,22 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header"
-              >What makes Tile Rush different from other match-3 puzzle
-              games?</span
-            >
-            <span class="ac-arrow"></span>
+              >What makes Tile Rush different from other match-3 puzzle games?
+            </span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
           <div class="ac-panel">
             <p class="ac-text">
@@ -1389,7 +1457,20 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header">How do boosters work in the game?</span>
-            <span class="ac-arrow"></span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
           <div class="ac-panel">
             <p class="ac-text">
@@ -1407,7 +1488,20 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header">Are new levels added regularly?</span>
-            <span class=""></span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
 
           <div class="ac-panel">
@@ -1426,10 +1520,22 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header"
-              >What is Zen Mode and how is it different from regular
-              gameplay?</span
-            >
-            <span class=""></span>
+              >What is Zen Mode and how is it different from regular gameplay?
+            </span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
 
           <div class="ac-panel">
@@ -1447,9 +1553,22 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header"
-              >How difficult is the game? Is it suitable for all ages?</span
-            >
-            <span class=""></span>
+              >How difficult is the game? Is it suitable for all ages?
+            </span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
           <div class="ac-panel">
             <p class="ac-text">
@@ -1467,9 +1586,22 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header"
-              >Can I sync my progress across devices?</span
-            >
-            <span class=""></span>
+              >Can I sync my progress across devices?
+            </span>
+            <span
+              ><svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
           <div class="ac-panel">
             <p class="ac-text">
@@ -1488,7 +1620,20 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header">Are there any ads in the game?</span>
-            <span class=""></span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
           <div class="ac-panel">
             <p class="ac-text">
@@ -1506,9 +1651,22 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header">
-              How can I report a bug or suggest a feature?</span
-            >
-            <span class=""></span>
+              How can I report a bug or suggest a feature?
+            </span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
 
           <div class="ac-panel">
@@ -1526,9 +1684,22 @@
         <div class="ac">
           <button type="button" class="ac-trigger">
             <span class="ac-header"
-              >Is Tile Rush safe for children to play?</span
-            >
-            <span class=""></span>
+              >Is Tile Rush safe for children to play?
+            </span>
+            <span>
+              <svg
+                width="28"
+                height="28"
+                aria-hidden="true"
+                focusable="false"
+                class="svg"
+              >
+                <use
+                  id="burger-icon"
+                  href="/STP-9460/assets/sprite-C2Q8ohbR.svg#icon-arrow-down"
+                ></use>
+              </svg>
+            </span>
           </button>
           <div class="ac-panel">
             <p class="ac-text">
@@ -1629,7 +1800,7 @@
 
     <div class="container">
   <div class="wrapper">
-    <div class="cookies">
+    <div class="cookies" data-cookies>
       <picture>
         <source
           media="(min-width: 1200px)"
@@ -1663,8 +1834,12 @@
             browsing this website, you agree to our use of cookies.
           </p>
           <div class="cookies__buttons">
-            <button class="cookies__btn accept">ACCEPT COOKIES</button>
-            <button class="cookies__btn decline">DECLINE COOKIES</button>
+            <button class="cookies__btn accept" data-cookies-accept>
+              ACCEPT COOKIES
+            </button>
+            <button class="cookies__btn decline" data-cookies-decline>
+              DECLINE COOKIES
+            </button>
           </div>
         </div>
       </div>
