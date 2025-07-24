@@ -1,5 +1,5 @@
 .testimonials_section {
-  scroll-margin-top: 20px;
+  scroll-margin-top: 50px;
 }
 
 .testimonials_section .wrapper {
@@ -35,7 +35,7 @@
 }
 
 .testimonials_section .swiper-slide::before {
-  content: "";
+  content: '';
   top: 0;
   right: 0;
   bottom: 0;
@@ -209,7 +209,7 @@
 
   .testimonials_user {
     font-size: 48px;
-    }
+  }
 
   .testimonials_stars {
     width: 160px;

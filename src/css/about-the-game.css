@@ -1,5 +1,5 @@
 .about-game {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 80px;
 }
 
 .about-game .wrapper {
@@ -180,9 +180,9 @@
 
   .about-game__description_text-bottom {
     width: 396px;
-      font-size: 16px;
-      position: relative;
-      left: 520px;
-      bottom: 640px;
+    font-size: 16px;
+    position: relative;
+    left: 520px;
+    bottom: 640px;
   }
 }

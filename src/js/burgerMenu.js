@@ -3,11 +3,16 @@ const menu = document.querySelector('[data-menu]');
 const background = document.querySelector('[data-nav-bg]');
 const icon = document.querySelector('[data-burger-icon]');
 const menuLinks = document.querySelectorAll('[data-menu-link]');
+const nav = document.querySelector('[data-nav]');
+
+const menuActiveClass = menu.dataset.toggleClass || 'is-active';
+const bgActiveClass = background.dataset.toggleClass || 'is-active';
+const navScrolledClass = nav.dataset.scrolledClass || 'nav--scrolled';
 
 burger.addEventListener('click', () => {
-  const isOpen = menu.classList.toggle('menu__list--active');
+  const isOpen = menu.classList.toggle(menuActiveClass);
+  background.classList.toggle(bgActiveClass);
 
-  background.classList.toggle('nav--active');
   icon.setAttribute(
     'href',
     isOpen ? '/img/sprite.svg#icon-close' : '/img/sprite.svg#icon-burger'
@@ -17,25 +22,25 @@ burger.addEventListener('click', () => {
 menuLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-    menu.classList.remove('menu__list--active');
-    background.classList.remove('nav--active');
+
+    menu.classList.remove(menuActiveClass);
+    background.classList.remove(bgActiveClass);
     icon.setAttribute('href', '/img/sprite.svg#icon-burger');
 
     const href = link.getAttribute('href');
-    const targetSection = document.querySelector(href);
-    if (targetSection) {
+    const target = document.querySelector(href);
+    if (target) {
       setTimeout(() => {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     }
   });
 });
 
 window.addEventListener('scroll', () => {
-  const nav = document.querySelector('[data-nav]');
-  if (window.scrollY > 10) {
-    nav.classList.add('nav--scrolled');
+  if (window.scrollY > 10 || window.scrollY < 10) {
+    nav.classList.add(navScrolledClass);
   } else {
-    nav.classList.remove('nav--scrolled');
+    nav.classList.remove(navScrolledClass);
   }
 });
