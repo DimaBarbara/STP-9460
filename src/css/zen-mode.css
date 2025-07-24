@@ -131,9 +131,9 @@
     width: 1031px;
     height: 249px;
     padding: 0 64px;
-    margin-right: -104px;
     margin-bottom: 40px;
     justify-content: start;
+    margin-left: 104px;
   }
 
   .zen-block--double {

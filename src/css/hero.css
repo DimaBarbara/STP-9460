@@ -42,7 +42,7 @@
   font-size: 25px;
   text-align: center;
   border-radius: 35px;
-  padding: 16px 24px;
+  padding: 16px 43px;
   width: 288px;
   height: 63px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
@@ -51,13 +51,17 @@
   margin-top: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
   order: 4;
 }
 .hero__btn:hover {
   background: var(--color-blue-hover)
 }
+.hero__btn svg {
+  width: 26px;
+  height: 29px;
+  margin-right: 16px;
+}
+
 .desktop__only {
   display: none;
 }
@@ -87,6 +91,12 @@
     height: 102px;
     margin-top: 89px;
     font-size: 32px;
+    padding: 16px 34px;
+    text-align: center;
+  }
+  .hero__btn svg {
+    width: 42px;
+    height: 46px;
   }
   .hero__description {
     width: 504px;
