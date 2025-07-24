@@ -5,17 +5,16 @@ const icon = document.querySelector('[data-burger-icon]');
 const menuLinks = document.querySelectorAll('[data-menu-link]');
 const nav = document.querySelector('[data-nav]');
 
-const menuActiveClass = menu.dataset.toggleClass || 'is-active';
-const bgActiveClass = background.dataset.toggleClass || 'is-active';
-const navScrolledClass = nav.dataset.scrolledClass || 'nav--scrolled';
-
 burger.addEventListener('click', () => {
-  const isOpen = menu.classList.toggle(menuActiveClass);
-  background.classList.toggle(bgActiveClass);
+  const isOpen = menu.dataset.menu === 'open';
+
+  // Переключення menu і background
+  menu.dataset.menu = isOpen ? 'noopen' : 'open';
+  background.dataset.navBg = isOpen ? 'noopen' : 'open';
 
   icon.setAttribute(
     'href',
-    isOpen ? '/img/sprite.svg#icon-close' : '/img/sprite.svg#icon-burger'
+    isOpen ? '/img/sprite.svg#icon-burger' : '/img/sprite.svg#icon-close'
   );
 });
 
@@ -23,8 +22,9 @@ menuLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
 
-    menu.classList.remove(menuActiveClass);
-    background.classList.remove(bgActiveClass);
+    // Закриваємо меню
+    menu.dataset.menu = 'noopen';
+    background.dataset.navBg = 'noopen';
     icon.setAttribute('href', '/img/sprite.svg#icon-burger');
 
     const href = link.getAttribute('href');
@@ -38,9 +38,9 @@ menuLinks.forEach(link => {
 });
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 10 || window.scrollY < 10) {
-    nav.classList.add(navScrolledClass);
+  if (window.scrollY > 10) {
+    nav.dataset.scrolled = 'true';
   } else {
-    nav.classList.remove(navScrolledClass);
+    delete nav.dataset.scrolled;
   }
 });

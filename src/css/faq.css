@@ -41,7 +41,7 @@
 }
 .ac.is-active .ac-panel {
   max-height: 500px;
-  padding: 74px 24px 24px 24px;
+  padding: 64px 24px 24px 24px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.05);
   background: rgba(106, 200, 250, 0.4);
   border-radius: 0 0 35px 35px;
@@ -93,6 +93,7 @@
   .ac.is-active .ac-panel {
     max-height: 1000px;
     width: 862px;
+    padding: 80px 40px 40px 40px;
   }
   .ac-text {
     font-size: 20px;
