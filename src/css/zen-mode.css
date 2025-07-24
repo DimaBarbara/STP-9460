@@ -83,7 +83,7 @@
   background-color: var(--color-green);
 }
 .zen-block--double.second {
-  background-image: url(/img/zen-mode/block_2.png);
+  background-image: url(/img/zen-mode/block-tree.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -91,7 +91,7 @@
   background-color: var(--color-yellow);
 }
 .zen-block--double.fourth {
-  background-image: url(/img/zen-mode/block_4.png);
+  background-image: url(/img/zen-mode/block-beach.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -99,7 +99,7 @@
   background-color: var(--color-pink);
 }
 .zen-block--double.sixth {
-  background-image: url(/img/zen-mode/block_6.png);
+  background-image: url(/img/zen-mode/block-winter.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -133,29 +133,48 @@
     padding: 0 64px;
     margin-right: -104px;
     margin-bottom: 40px;
+    justify-content: start;
   }
 
   .zen-block--double {
+    padding: 0 64px;
     width: 1031px;
     height: 249px;
     margin-left: -104px;
     margin-bottom: 40px;
+    justify-content: end;
   }
 
   .zen-description {
     font-size: 20px;
-
     border-radius: 35px;
     padding: 24px;
-    width: auto;
-    height: auto;
     background-color: var(--color-white);
+    height: auto;
+  }
+  .zen-description.first {
+    width: 584px;
+  }
+  .zen-description.second {
+    width: 625px;
+  }
+  .zen-description.third {
+    width: 708px;
+  }
+  .zen-description.fourth {
+    width: 682px;
+  }
+  .zen-description.fifth {
+    width: 717px;
+  }
+  .zen-description.sixth {
+    width: 494px;
   }
   .zen-block.first {
     background-color: var(--color-green);
   }
   .zen-block--double.second {
-    background-image: url(/img/zen-mode/block_2.png);
+    background-image: url(/img/zen-mode/block-tree-desktop.png);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -163,7 +182,7 @@
     background-color: var(--color-yellow);
   }
   .zen-block--double.fourth {
-    background-image: url(/img/zen-mode/block_4.png);
+    background-image: url(/img/zen-mode/block-beach-desktop.png);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -171,7 +190,7 @@
     background-color: var(--color-pink);
   }
   .zen-block--double.sixth {
-    background-image: url(/img/zen-mode/block_6.png);
+    background-image: url(/img/zen-mode/block-winter-desktop.png);
     background-repeat: no-repeat;
     background-position: center center;
   }
