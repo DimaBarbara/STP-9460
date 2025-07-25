@@ -12,7 +12,7 @@ burger.addEventListener('click', () => {
 
   icon.setAttribute(
     'href',
-    `/img/sprite.svg#${isOpen ? 'icon-burger' : 'icon-close'}`
+    `./img/sprite.svg#${isOpen ? 'icon-burger' : 'icon-close'}`
   );
 });
 
