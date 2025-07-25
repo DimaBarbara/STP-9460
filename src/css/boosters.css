@@ -1,5 +1,5 @@
 .boosters {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 .boosters-title {
   font-family: 'Jua', sans-serif;
@@ -67,7 +67,7 @@
 }
 @media screen and (min-width: 1200px) {
   .boosters {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 200px;
     padding-bottom: 64px;
   }
   .boosters-title {

@@ -1,5 +1,5 @@
 .testimonials_section {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 100px;
 }
 
 .testimonials_section .wrapper {
@@ -163,7 +163,7 @@
 
 @media screen and (min-width: 1200px) {
   .testimonials_section {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 220px;
   }
 
   .testimonials_section .wrapper {

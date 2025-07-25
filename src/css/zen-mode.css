@@ -1,5 +1,5 @@
 .zen-mode {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 100px;
 }
 .zen-mode .wrapper {
   padding-top: 16px;
@@ -105,7 +105,7 @@
 }
 @media screen and (min-width: 1200px) {
   .zen-mode {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 200px;
   }
   .zen-mode .wrapper {
     display: flex;

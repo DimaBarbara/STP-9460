@@ -39,7 +39,7 @@
 }
 @media screen and (min-width: 1200px) {
   .special {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 140px;
   }
   .br {
     display: none;
