@@ -4,7 +4,6 @@ const background = document.querySelector('[data-nav-bg]');
 const icon = document.querySelector('[data-burger-icon]');
 const menuLinks = document.querySelectorAll('[data-menu-link]');
 const nav = document.querySelector('[data-nav]');
-import spriteUrl from '../img/sprite.svg';
 
 burger.addEventListener('click', () => {
   const isOpen = menu.dataset.menu === 'open';
@@ -13,7 +12,7 @@ burger.addEventListener('click', () => {
 
   icon.setAttribute(
     'href',
-    isOpen ? `${spriteUrl}#icon-burger` : `${spriteUrl}#icon-close`
+    `/img/sprite.svg#${isOpen ? 'icon-burger' : 'icon-close'}`
   );
 });
 
