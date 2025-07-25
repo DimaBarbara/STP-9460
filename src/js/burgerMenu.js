@@ -4,7 +4,7 @@ const background = document.querySelector('[data-nav-bg]');
 const icon = document.querySelector('[data-burger-icon]');
 const menuLinks = document.querySelectorAll('[data-menu-link]');
 const nav = document.querySelector('[data-nav]');
-import spriteUrl from '../img/svg/sprite.svg';
+import spriteUrl from '../img/sprite.svg';
 
 burger.addEventListener('click', () => {
   const isOpen = menu.dataset.menu === 'open';
