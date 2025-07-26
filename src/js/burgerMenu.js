@@ -21,7 +21,7 @@ menuLinks.forEach(link => {
     e.preventDefault();
     menu.dataset.menu = 'noopen';
     background.dataset.navBg = 'noopen';
-    icon.setAttribute('href', '/img/sprite.svg#icon-burger');
+    icon.setAttribute('href', './img/sprite.svg#icon-burger');
 
     const href = link.getAttribute('href');
     const target = document.querySelector(href);
