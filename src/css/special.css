@@ -2,7 +2,7 @@
   scroll-margin-top: 100px;
 }
 .special .wrapper {
-  padding-bottom: 32px;
+  padding-top: 16px;
 }
 .special__title {
   font-family: 'Jua', sans-serif;
@@ -37,15 +37,21 @@
   height: 64px;
   max-width: none;
 }
+.special__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+}
 @media screen and (min-width: 1200px) {
   .special {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 180px;
   }
   .br {
     display: none;
   }
   .special .wrapper {
-    padding: 64px 89px;
+    padding: 24px 89px 64px 89px;
   }
   .special__title {
     font-size: 48px;
@@ -73,5 +79,8 @@
     max-width: none;
     width: 153px;
     height: 153px;
+  }
+    .special__text {
+    font-size: 20px;
   }
 }
